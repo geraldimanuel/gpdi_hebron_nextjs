@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Merriweather } from "@next/font/google";
 import { Button } from "../components/Button/Button";
+import { Navbar } from "@/components/Navbar/Navbar";
 
 import logo from "../assets/Hebron.png";
 
@@ -41,15 +42,7 @@ export default function Home() {
 						</div>
 					</div>
 				</div>
-				<div
-					id="MenuBar"
-					className="fixed top-[45px] left-[45px] flex-row justify-start"
-				>
-					<Button
-						iconLogo="openmoji:hamburger-menu"
-						logo="https://gpdi-hebron.com/website/images/banner/gpdi-hebron-gading-serpong-41181523042016.png"
-					/>
-				</div>
+				<Navbar />
 			</section>
 			<section id="Section2" className="max-w-4xl mx-auto pt-36">
 				<div className="grid grid-cols-2 grid-flow-col">
