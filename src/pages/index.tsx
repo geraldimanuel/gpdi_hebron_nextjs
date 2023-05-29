@@ -1,9 +1,6 @@
 import Image from "next/image";
 import { Merriweather } from "@next/font/google";
-import { Button } from "../components/Button/Button";
 import { Navbar } from "@/components/Navbar/Navbar";
-
-import logo from "../assets/Hebron.png";
 
 const merri = Merriweather({
 	subsets: ["latin"],
@@ -194,7 +191,7 @@ export default function Home() {
 
 			<section
 				id="Section4"
-				className="max-w-4xl mx-auto text-2xl text-center leading-10 pt-36"
+				className="max-w-4xl mx-auto text-2xl text-left leading-10 py-36"
 			>
 				<div>
 					<span className="text-[#939090]">Kami hadir untuk </span>
@@ -207,52 +204,39 @@ export default function Home() {
 					<span>generasi yang akan datang.</span>
 				</div>
 			</section>
-			<section id="Section5" className="max-w-4xl mx-auto pt-36">
-				<div className="grid justify-center text-center font-semibold">
-					<p className="text-6xl">Bergabunglah pada</p>
-					<p className="text-red-600 text-7xl">Ibadah kami!</p>
-				</div>
-			</section>
-			<section
-				id="Section6"
-				className="max-w-4xl mx-auto grid gap-10 pt-36 grid-flow-col"
-			>
-				<div className="w-xl flex flex-col gap-10 ">
-					<div>
-						<p className="text-4xl font-semibold">Hebron Center</p>
+			<section id="Section5" className="max-w-4xl mx-auto">
+				<div className="flex flex-col pt-20">
+					<div className="flex flex-col gap-2 bg-clip-text text-transparent bg-gradient-to-b from-[#D9D9D9] to-[#717171]">
+						<p className="font-medium text-5xl tracking-widest">
+							Come, let us sing for joy to the
+						</p>
+						<p className="font-medium text-5xl tracking-widest">
+							LORD; let us shout aloud to the
+						</p>
+						<p className="font-medium text-5xl tracking-widest">
+							Rock of our salvation!
+						</p>
 					</div>
-					<div>
-						<span className="text-lg w-96 font-normal py-16">
-							Ruko L39, Kompleks Pasar Modern Paramount, Jl. Boulevard Raya
-							Gading Serpong, Kabupaten Tangerang, Banten
-						</span>
+					<p className="font-medium italic text-xl text-[#717171]">
+						Psalm 95:1 (NIV)
+					</p>
+					<div className="pt-96">
+						<p className="text-3xl tracking-tight">Every Saturday,</p>
+						<div className="flex">
+							<p className="text-3xl">
+								on{" "}
+								<span className="font-medium tracking-tight">17.00 WIB.</span>
+							</p>
+						</div>
+						<div className="flex gap-4 mt-2 pb-20">
+							<button className="rounded-[6px] border-[1px] border-white ">
+								<p className="text-xl font-semibold my-2 mx-8">Kontak Kami</p>
+							</button>
+							<button className="rounded-[6px] border-[1px] border-white ">
+								<p className="text-xl font-semibold my-2 mx-8">Arah Jalan</p>
+							</button>
+						</div>
 					</div>
-					<div className="text-3xl font-normal w-72">
-						<span>Setiap hari</span>
-						<span className="font-medium"> Sabtu,</span>
-						<span> Pukul</span>
-						<span className="font-medium"> 17:00 WIB.</span>
-					</div>
-					<div className="flex gap-5 mt-7">
-						<a
-							href="https://hmif.umn.ac.id/"
-							className="rounded border-2 border-white py-2 px-8 text-1xl text-center font-bold leading-8 flex items-center justify-center w-40"
-						>
-							Contact Us
-						</a>
-						<a
-							href="https://www.google.com/maps?ll=-6.250675,106.62271&z=16&t=m&hl=en&gl=ID&mapclient=embed&cid=12761614219598690523"
-							className="rounded border-2 border-white py-2 px-8 text-1xl text-center font-bold leading-8 flex items-center justify-center w-40"
-						>
-							Directions
-						</a>
-					</div>
-				</div>
-				<div>
-					<iframe
-						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.0895283011228!2d106.62251707651045!3d-6.251933668562876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69fc76ad63a58b%3A0xb11a5c84cfc0f8db!2sGPdI%20Hebron%20Gading%20Serpong!5e0!3m2!1sen!2sid!4v1683108059648!5m2!1sen!2sid"
-						className="w-[550px] h-[400px]"
-					></iframe>
 				</div>
 			</section>
 		</>
