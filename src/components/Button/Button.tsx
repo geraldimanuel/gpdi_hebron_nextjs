@@ -1,16 +1,11 @@
-import { Icon } from "@iconify/react";
-import Image from "next/image";
-
 type Props = {
-	logo: string;
-	iconLogo: string;
+	text: string;
 };
 
-export const Button = ({ logo, iconLogo }: Props) => {
+export const Button = ({ text }: Props) => {
 	return (
-		<button className="flex bg-[#ffffff] rounded-[6px] py-1">
-			<Image src={logo} alt="icon" width={80} height={44} />
-			<Icon icon={iconLogo} width={50} />
+		<button className="rounded-[6px] border-[1px] border-white ">
+			<p className="text-xl font-semibold my-2 mx-8">{text}</p>
 		</button>
 	);
 };

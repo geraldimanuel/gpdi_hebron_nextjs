@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Merriweather } from "@next/font/google";
 import { Navbar } from "@/components/Navbar/Navbar";
+import { Button } from "@/components/Button/Button";
 
 const merri = Merriweather({
 	subsets: ["latin"],
@@ -33,9 +34,7 @@ export default function Home() {
 							</div>
 						</div>
 						<div>
-							<button className="rounded-[6px] border-[1px] border-white ">
-								<p className="text-xl font-semibold my-2 mx-8">Bergabung</p>
-							</button>
+							<Button text="Bergabung" />
 						</div>
 					</div>
 				</div>
@@ -229,12 +228,8 @@ export default function Home() {
 							</p>
 						</div>
 						<div className="flex gap-4 mt-2 pb-20">
-							<button className="rounded-[6px] border-[1px] border-white ">
-								<p className="text-xl font-semibold my-2 mx-8">Kontak Kami</p>
-							</button>
-							<button className="rounded-[6px] border-[1px] border-white ">
-								<p className="text-xl font-semibold my-2 mx-8">Arah Jalan</p>
-							</button>
+							<Button text="Kontak Kami" />
+							<Button text="Arah Jalan" />
 						</div>
 					</div>
 				</div>
