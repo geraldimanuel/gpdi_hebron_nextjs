@@ -12,15 +12,15 @@ const merri = Merriweather({
 export default function Home() {
 	return (
 		<>
-			<section id="Section1" className="max-w-4xl mx-auto">
-				<div id="Hero" className="min-h-screen flex items-center">
+			<section id="Section1" className="">
+				<div id="Hero" className="min-h-screen relative">
 					<Image
 						src="/Banner.png"
 						alt="Banner"
 						fill
-						className="relative -z-20 before:bg-black before:absolute before:inset-0 before:z-10 "
+						className="relative -z-20 before:bg-black before:absolute before:inset-0 before:z-10 object-cover object-top"
 					/>
-					<div id="Hero Text" className="flex flex-col gap-9">
+					<div id="Hero Text" className="max-w-6xl mx-auto min-h-screen flex flex-col justify-center gap-6">
 						<div className="flex flex-col">
 							<p className="text-md font-semibold tracking-[5px]">
 								Kami adalah
@@ -40,7 +40,7 @@ export default function Home() {
 				</div>
 				<Navbar />
 			</section>
-			<section id="Section2" className="max-w-4xl mx-auto pt-36">
+			<section id="Section2" className="max-w-6xl mx-auto pt-36">
 				<div className="grid grid-cols-2 grid-flow-col">
 					<div className="text-6xl font-bold">
 						<h1>Insert Text.</h1>
@@ -190,7 +190,7 @@ export default function Home() {
 
 			<section
 				id="Section4"
-				className="max-w-4xl mx-auto text-2xl text-left leading-10 py-36"
+				className="max-w-6xl mx-auto text-2xl text-left leading-10 py-36"
 			>
 				<div>
 					<span className="text-[#939090]">Kami hadir untuk </span>
@@ -203,7 +203,7 @@ export default function Home() {
 					<span>generasi yang akan datang.</span>
 				</div>
 			</section>
-			<section id="Section5" className="max-w-4xl mx-auto">
+			<section id="Section5" className="max-w-6xl mx-auto">
 				<div className="flex flex-col pt-20">
 					<div className="flex flex-col gap-2 bg-clip-text text-transparent bg-gradient-to-b from-[#D9D9D9] to-[#717171]">
 						<p className="font-medium text-5xl tracking-widest">
