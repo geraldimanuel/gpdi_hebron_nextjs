@@ -13,8 +13,8 @@ const merri = Merriweather({
 export default function Home() {
 	return (
 		<>
-			<section id="Section1" className="max-w-5xl mx-auto">
-				<div id="Hero" className="min-h-screen flex items-center">
+			<section id="Section1" className="o">
+				<div id="Hero" className="min-h-screen relative">
 					<Image
 						src="/Banner.png"
 						alt="Banner"
@@ -23,7 +23,7 @@ export default function Home() {
 					/>
 					<div
 						id="Hero Text"
-						className="max-w-6xl mx-auto min-h-screen flex flex-col justify-center gap-6"
+						className="max-w-5xl mx-auto min-h-screen flex flex-col justify-center gap-6"
 					>
 						<div className="flex flex-col">
 							<p className="text-md font-semibold tracking-[5px]">
