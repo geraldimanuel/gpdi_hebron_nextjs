@@ -3,6 +3,7 @@ import { Merriweather } from "@next/font/google";
 import { Navbar } from "@/components/Navbar/Navbar";
 import { Button } from "@/components/Button/Button";
 import { SpotSVG } from "@/components/SpotSVG/SpotSVG";
+import { Footer } from "@/components/Footer/Footer";
 
 const merri = Merriweather({
 	subsets: ["latin"],
