@@ -62,7 +62,7 @@ export default function Home() {
 
 			<section id="Section3" className="max-w-7xl mx-auto pt-36">
 				<div className="relative">
-					<div className="grid grid-cols-3 gap-4 relative z-10">
+					<div className="grid grid-cols-3 gap-4 relative -z-10">
 						<div className="bg-red-700 h-72 relative">
 							<Image src="/Stockphoto.jpg" alt="Stockphoto" fill />
 						</div>
