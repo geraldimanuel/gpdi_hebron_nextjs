@@ -19,9 +19,12 @@ export default function Home() {
 						src="/Banner.png"
 						alt="Banner"
 						fill
-						className="relative -z-20 before:bg-black before:absolute before:inset-0 before:z-10 "
+						className="relative -z-20 before:bg-black before:absolute before:inset-0 before:z-10 object-cover object-top"
 					/>
-					<div id="Hero Text" className="flex flex-col gap-9">
+					<div
+						id="Hero Text"
+						className="max-w-6xl mx-auto min-h-screen flex flex-col justify-center gap-6"
+					>
 						<div className="flex flex-col">
 							<p className="text-md font-semibold tracking-[5px]">
 								Kami adalah

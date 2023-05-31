@@ -22,7 +22,7 @@ export const Navbar = () => {
 			}`}
 		>
 			<nav
-				className={` rounded-lg items-center cursor-pointer  h-12 ${
+				className={`rounded-lg items-center cursor-pointer h-12 ${
 					open
 						? "bg-[#00347E] fixed top-[40px] left-[40px] w-12 flex items-center justify-center transform transition duration-300 ease-in-out"
 						: "bg-white flex px-3 gap-3 transform transition duration-300 ease-in-out"
