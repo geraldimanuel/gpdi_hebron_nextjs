@@ -1,27 +1,19 @@
 type Props = {
 	heading: string;
 	text: string;
-	// height: string;
-	// width: string;
+	height: string;
+	width: string;
 };
 
-export const Card = ({ heading, text }: Props) => {
+export const Card = ({ heading, text, height, width }: Props) => {
 	return (
-		<div id="red" className={`bg-[#D20202] h-[380px] w-[320px] p-[7px]`}>
-			<div id="blue" className={`bg-[#3EA2F4] h-[380px] w-[320px]`}>
-				<div
-					id="black"
-					className={`bg-black h-[373px] w-[313px] z-30 p-8 font-semibold text-4xl text-white flex flex-col justify-between`}
-				>
-					<p>This is a Values card</p>
+		<div
+			id="black"
+			className={`bg-black border-[#3EA2F4] border-4 drop-shadow-[6px_6px_0px_rgba(210,2,2,1)] h-[${height}px] w-[${width}px] p-8 font-semibold text-4xl text-white flex flex-col justify-between`}
+		>
+			<p>{heading}</p>
 
-					<p className="font-normal text-sm text-justify">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel
-						convallis lacus. Nam at ultrices nulla. Nam sed hendrerit magna, vel
-						finibus nulla.
-					</p>
-				</div>
-			</div>
+			<p className="font-normal text-sm text-justify">{text}</p>
 		</div>
 	);
 };

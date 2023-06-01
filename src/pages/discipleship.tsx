@@ -164,9 +164,24 @@ export default function discipleship() {
 				id="section5"
 				className="max-w-5xl mx-auto flex gap-1 justify-between"
 			>
-				<Card heading="hai" text="" />
-				<Card heading="hai" text="" />
-				<Card heading="hai" text="" />
+				<Card
+					heading="Heading"
+					text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel convallis lacus. Nam at ultrices nulla. Nam sed hendrerit magna, vel finibus nulla."
+					height="380"
+					width="320"
+				/>
+				<Card
+					heading="Heading"
+					text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel convallis lacus. Nam at ultrices nulla. Nam sed hendrerit magna, vel finibus nulla."
+					height="380"
+					width="320"
+				/>
+				<Card
+					heading="Heading"
+					text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel convallis lacus. Nam at ultrices nulla. Nam sed hendrerit magna, vel finibus nulla."
+					height="380"
+					width="320"
+				/>
 			</section>
 			<section className="max-w-5xl mx-auto py-28" id="section6">
 				<div className="flex justify-between items-center">
