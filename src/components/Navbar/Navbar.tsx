@@ -40,9 +40,9 @@ export const Navbar = () => {
 			</nav>
 
 			{open ? (
-				<div className="flex flex-col px-24 py-28 ">
-					<div className="flex gap-36 ">
-						<div className="flex flex-col">
+				<div className="max-w-xs md:max-w-none mx-auto flex md:px-24 mt-28 md:mt-0 md:py-28">
+					<div className="flex flex-col md:flex-row gap-6 md:gap-36 ">
+						<div className="hidden md:flex md:flex-col">
 							<Image src="/Hebron.png" alt="" width={130} height={0}></Image>
 							<p className="text-[#00347E] text-4xl font-semibold mt-4">
 								GPdI Hebron
@@ -77,7 +77,7 @@ export const Navbar = () => {
 								</p>
 							</div>
 						</div>
-						<div className="flex flex-col gap-12 ps-14	">
+						<div className="flex flex-col gap-6 md:gap-12 md:ps-14	">
 							<p className="text-[#00347E] text-4xl font-semibold">DOTS</p>
 							<p className="text-[#00347E] text-4xl font-semibold">FOCC</p>
 							<p className="text-[#00347E] text-4xl font-semibold">
