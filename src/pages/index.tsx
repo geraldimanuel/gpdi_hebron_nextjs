@@ -134,7 +134,7 @@ export default function Home() {
 					<span>generasi yang akan datang.</span>
 				</div>
 			</section>
-			<section id="Section5" className="relative">
+			<section id="Section5" className="relative -z-20">
 				<Image src="/Banner_2.png" fill className="object-cover -z-10" alt="" />
 				<div className="flex flex-col pt-14 max-w-5xl mx-auto ">
 					<div className="flex flex-col gap-2 bg-clip-text text-transparent bg-gradient-to-b from-[#D9D9D9] to-[#717171] font-medium text-5xl tracking-widest">

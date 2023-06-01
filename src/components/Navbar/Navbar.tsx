@@ -90,5 +90,3 @@ export const Navbar = () => {
 		</div>
 	);
 };
-
-// pass open, setOpen value to parent component
