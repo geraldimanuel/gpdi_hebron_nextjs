@@ -175,8 +175,8 @@ export default function Home() {
 				</div>
 			</section>
 
-			{/* <section id="Section6" className="max-w-5xl mx-auto pt-36">
-				<p className="text-5xl">Our Programs</p>
+			<section id="Section6" className="max-w-xs md:max-w-5xl mx-auto pt-36">
+				<p className="text-4xl text-center md:text-left md:text-5xl">Our Programs</p>
 				<div className="pt-10 flex flex-col gap-4">
 					<div className="relative h-80">
 						<div className="after:absolute after:inset-0 after:bg-[#2052D2] after:rounded-2xl after:mix-blend-multiply">
@@ -187,15 +187,15 @@ export default function Home() {
 								alt=""
 							/>
 						</div>
-						<div className="absolute h-80 flex items-center gap-10 w-full p-28">
+						<div className="absolute h-80 flex flex-col md:flex-row items-center md:gap-10 w-full md:p-28 p-6">
 							<div className="drop-shadow-[6px_6px_0px_rgba(210,2,2,1)]">
 								<Image src="/Logo_Home.png" height={600} width={600} alt="" />
 							</div>
-							<div className="flex flex-col gap-11">
-								<p className="text-2xl font-semibold tracking-tight">
+							<div className="flex flex-col md:gap-11 gap-1">
+								<p className="md:text-2xl text-xl font-semibold tracking-tight text-center md:text-left">
 									A small groups community to help you live within God's grace
 								</p>
-								<div className="flex gap-2.5">
+								<div className="flex gap-2.5 flex-col md:flex-row">
 									<Button text="Counseling" />
 									<Button text="Learn More" />
 								</div>
@@ -212,7 +212,7 @@ export default function Home() {
 								alt=""
 							/>
 						</div>
-						<div className="absolute h-80 items-center gap-5 flex w-full p-28">
+						<div className="absolute h-80 flex flex-col md:flex-row items-center gap-5 flex w-full md:p-28 p-6 pt-10">
 							<div>
 								<Image
 									src="/Logo_SPOT_Service_Team.png"
@@ -221,19 +221,19 @@ export default function Home() {
 									alt=""
 								/>
 							</div>
-							<div className="flex flex-col gap-11">
-								<p className="text-2xl font-semibold tracking-tight">
+							<div className="flex flex-col md:gap-11 gap-5">
+								<p className="md:text-2xl text-xl font-semibold tracking-tight text-center md:text-left">
 									Service Team by SPoT who serves in Praise & Worship ministry,
 									and more
 								</p>
-								<div className="flex gap-2.5">
+								<div className="flex flex-col md:flex-row">
 									<Button text="Join our Team" />
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</section> */}
+			</section>
 
 			{/*<Footer />*/}
 		</>
