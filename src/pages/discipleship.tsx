@@ -1,11 +1,10 @@
 import React from "react";
 import Image from "next/image";
-import { Merriweather } from "@next/font/google";
 import { Navbar } from "@/components/Navbar/Navbar";
 import { Button } from "@/components/Button/Button";
 import { Footer } from "@/components/Footer/Footer";
 import { Card } from "@/components/Card/Card";
-import { motion, Variants } from "framer-motion";
+import { motion } from "framer-motion";
 
 export default function discipleship() {
 	const animate = {
