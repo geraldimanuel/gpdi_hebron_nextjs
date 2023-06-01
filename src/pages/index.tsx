@@ -160,6 +160,46 @@ export default function Home() {
 					</div>
 				</div>
 			</section>
+
+			<section id="Section6" className="max-w-5xl mx-auto pt-36">
+				<p className="text-5xl">Our Programs</p>
+				<div className="pt-10 flex flex-col gap-4">
+					<div className="relative h-80">
+						<div className="after:absolute after:inset-0 after:bg-[#2052D2] after:rounded-2xl after:mix-blend-multiply">
+							<Image src="/Banner_Home.png" fill className="object-cover rounded-2xl" alt="" />
+						</div>
+						<div className="absolute h-80 flex items-center gap-10 w-full p-28">
+							<div className="drop-shadow-[6px_6px_0px_rgba(210,2,2,1)]">
+								<Image src="/Logo_Home.png" height={600} width={600} alt='' />
+							</div>
+							<div className="flex flex-col gap-11">
+								<p className="text-2xl font-semibold tracking-tight">A small groups community to help you live within God's grace</p>
+								<div className="flex gap-2.5">
+									<Button text="Counseling" />
+									<Button text="Learn More" />
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div className="relative h-80">
+						<div className="after:absolute after:inset-0 after:bg-[#952C2C] after:rounded-2xl after:mix-blend-multiply">
+							<Image src="/Banner_SPOT.png" fill className="object-cover rounded-2xl" alt="" />
+						</div>
+						<div className="absolute h-80 items-center gap-5 flex w-full p-28">
+							<div>
+								<Image src="/Logo_SPOT_Service_Team.png" height={750} width={750} alt='' />
+							</div>
+							<div className="flex flex-col gap-11">
+								<p className="text-2xl font-semibold tracking-tight">Service Team by SPoT who serves in Praise & Worship ministry, and more</p>
+								<div className="flex gap-2.5">
+									<Button text="Join our Team" />
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 		</>
 	);
 }
