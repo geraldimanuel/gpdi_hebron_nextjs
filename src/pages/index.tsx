@@ -200,6 +200,10 @@ export default function Home() {
 					</div>
 				</div>
 			</section>
+
+			<section id="Section7" className="mx-auto pt-36">
+				<Footer />
+			</section>
 		</>
 	);
 }
