@@ -210,7 +210,7 @@ export default function discipleship() {
 				variants={animate}
 				viewport={{ once: false, amount: 0.3 }}
 				id="section5"
-				className="max-w-xs md:max-w-5xl mx-auto flex flex-col md:flex-row gap-4 md:justify-between py-3 md:py-0"
+				className="max-w-xs md:max-w-5xl mx-auto flex flex-col md:flex-row gap-4 md:justify-between py-3 md:py-0 -z-20"
 			>
 				<Card
 					heading="Heading"
