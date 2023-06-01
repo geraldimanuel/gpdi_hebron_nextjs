@@ -226,15 +226,21 @@ export default function Home() {
 				id="Section6"
 				className="max-w-xs md:max-w-5xl mx-auto py-10 md:py-36"
 			>
-				<p className="text-4xl text-center md:text-left md:text-5xl">
+				<motion.p
+					initial={"offscreen"}
+					whileInView={"onscreen"}
+					variants={animate}
+					viewport={{ once: false, amount: 0.3 }}
+					className="text-4xl text-center md:text-left md:text-5xl"
+				>
 					Our Programs
-				</p>
+				</motion.p>
 				<div className="pt-10 flex flex-col gap-4">
 					<motion.div
 						initial={"offscreen"}
 						whileInView={"onscreen"}
 						variants={animate}
-						viewport={{ once: false, amount: 0.3 }}
+						viewport={{ once: false, amount: 0.5 }}
 						className="relative h-80"
 					>
 						<div className="after:absolute after:inset-0 after:bg-[#2052D2] after:rounded-2xl after:mix-blend-multiply">
@@ -265,7 +271,7 @@ export default function Home() {
 						initial={"offscreen"}
 						whileInView={"onscreen"}
 						variants={animate}
-						viewport={{ once: false, amount: 0.3 }}
+						viewport={{ once: false, amount: 0.5 }}
 						className="relative h-80"
 					>
 						<div className="after:absolute after:inset-0 after:bg-[#952C2C] after:rounded-2xl after:mix-blend-multiply">

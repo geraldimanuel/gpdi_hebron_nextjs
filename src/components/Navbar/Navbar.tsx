@@ -1,6 +1,8 @@
 import { Icon } from "@iconify/react";
 import Image from "next/image";
 import { useState } from "react";
+import Link from "next/link";
+import { motion } from "framer-motion";
 
 export const Navbar = () => {
 	const [open, setOpen] = useState(false);
@@ -65,12 +67,22 @@ export const Navbar = () => {
 							</div>
 							<p className="text-[#00347E] text-4xl font-semibold mt-4">Spot</p>
 							<div className="mt-4 flex flex-col gap-2">
-								<p className="text-[#00347E] text-base font-medium">
-									Tentang Spot
-								</p>
-								<p className="text-[#00347E] text-base font-medium">
-									Komsel HoME
-								</p>
+								<Link href="/">
+									<motion.p
+										whileHover={{ scale: 1.1 }}
+										className="text-[#00347E] text-base font-medium"
+									>
+										Tentang Spot
+									</motion.p>
+								</Link>
+								<Link href="/discipleship">
+									<motion.p
+										whileHover={{ scale: 1.1 }}
+										className="text-[#00347E] text-base font-medium"
+									>
+										Komsel HoME
+									</motion.p>
+								</Link>
 							</div>
 						</div>
 						<div className="flex flex-col gap-6 md:gap-12 md:ps-14	">

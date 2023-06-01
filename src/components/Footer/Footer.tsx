@@ -1,10 +1,26 @@
 import React from "react";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 export const Footer = () => {
+	const animate_down = {
+		offscreen: { y: -100, opacity: 0 },
+		onscreen: {
+			y: 0,
+			opacity: 1,
+			transition: { delay: 0.2, duration: 1.5, type: "spring", bounce: 0.2 },
+		},
+	};
+
 	return (
 		<div className="bg-white h-full md:h-[320px]">
-			<div className="max-w-xs md:max-w-5xl mx-auto flex flex-col md:flex-row py-6 md:py-14 gap-8  md:gap-28">
+			<motion.div
+				initial={"offscreen"}
+				whileInView={"onscreen"}
+				variants={animate_down}
+				viewport={{ once: false, amount: 0.5 }}
+				className="max-w-xs md:max-w-5xl mx-auto flex flex-col md:flex-row py-6 md:py-14 gap-8  md:gap-28"
+			>
 				<div className="flex flex-col gap-2">
 					<div className="flex items-center gap-3">
 						<Image src="/Hebron.png" alt="hebron" width={60} height={100} />
@@ -43,7 +59,7 @@ export const Footer = () => {
 					<p className="font-semibold text-black text-base">DoTS</p>
 					<p className="font-semibold text-black text-base">Hebron Kids</p>
 				</div>
-			</div>
+			</motion.div>
 		</div>
 	);
 };
