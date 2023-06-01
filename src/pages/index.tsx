@@ -253,7 +253,7 @@ export default function Home() {
 						</div>
 						<div className="absolute h-80 flex flex-col md:flex-row items-center md:gap-10 w-full md:p-28 p-6">
 							<div className="drop-shadow-[6px_6px_0px_rgba(210,2,2,1)]">
-								<Image src="/Logo_Home.png" height={600} width={600} alt="" />
+								<Image src="/Logo_HOME.png" height={600} width={600} alt="" />
 							</div>
 							<div className="flex flex-col md:gap-11 gap-1">
 								<p className="md:text-2xl text-xl font-semibold tracking-tight text-center md:text-left">
@@ -285,7 +285,7 @@ export default function Home() {
 						<div className="absolute h-80 flex flex-col md:flex-row items-center gap-5 w-full md:p-28 p-6 pt-10">
 							<div>
 								<Image
-									src="/Logo_SPOT_Service_Team.png"
+									src="/Logo_Spot_Service_Team.png"
 									height={750}
 									width={750}
 									alt=""

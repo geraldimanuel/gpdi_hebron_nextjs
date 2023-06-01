@@ -42,7 +42,7 @@ export default function discipleship() {
 					/>
 					{/* image home kasih mb-8 ya!*/}
 					<Image
-						src="/logo_home.png"
+						src="/Logo_HOME.png"
 						alt=""
 						width={300}
 						height={0}
