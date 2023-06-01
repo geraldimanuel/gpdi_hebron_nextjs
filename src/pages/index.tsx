@@ -4,6 +4,7 @@ import { Navbar } from "@/components/Navbar/Navbar";
 import { Button } from "@/components/Button/Button";
 import { SpotSVG } from "@/components/SpotSVG/SpotSVG";
 import { Footer } from "@/components/Footer/Footer";
+import { motion } from "framer-motion";
 
 const merri = Merriweather({
 	subsets: ["latin"],
@@ -12,6 +13,14 @@ const merri = Merriweather({
 });
 
 export default function Home() {
+	const animate = {
+		offscreen: { x: -100, opacity: 0 },
+		onscreen: {
+			x: 0,
+			opacity: 1,
+			transition: { delay: 0.2, duration: 2.5, type: "spring", bounce: 0.2 },
+		},
+	};
 	return (
 		<>
 			<section id="Section1" className="">
