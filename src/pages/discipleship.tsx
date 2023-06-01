@@ -31,7 +31,7 @@ export default function discipleship() {
 					whileInView={"onscreen"}
 					variants={animate}
 					viewport={{ once: false, amount: 0.3 }}
-					className="max-w-5xl mx-auto py-28"
+					className="flex flex-col items-center md:items-start px-10 md:px-0 max-w-xs md:max-w-5xl mx-auto py-32 md:py-28"
 				>
 					<Image
 						src="/logo_spot.png"
@@ -49,11 +49,11 @@ export default function discipleship() {
 				whileInView={"onscreen"}
 				variants={animate}
 				viewport={{ once: false, amount: 0.3 }}
-				className="max-w-5xl mx-auto py-10"
+				className="max-w-xs md:max-w-5xl mx-auto py-0 md:py-10"
 				id="section2"
 			>
-				<div className="text-xl">
-					<p className="font-semibold text-base">What is HOME?</p>
+				<div className="text-lg md:text-xl">
+					<p className="font-semibold text-sm  md:text-base">What is HOME?</p>
 					<p className="mt-2">
 						HOME is a small groups community by SPoT, Lorem ipsum dolor sit
 						amet, consectetur
@@ -71,7 +71,7 @@ export default function discipleship() {
 				variants={animate}
 				viewport={{ once: false, amount: 0.3 }}
 				id="section3"
-				className="max-w-5xl mx-auto py-14"
+				className="max-w-xs md:max-w-5xl mx-auto py-8 md:py-14"
 			>
 				<div className="flex gap-4 items-center">
 					<div className="flex flex-col gap-4 justify-center">
@@ -180,11 +180,11 @@ export default function discipleship() {
 				whileInView={"onscreen"}
 				variants={animate}
 				viewport={{ once: false, amount: 0.3 }}
-				className="max-w-5xl mx-auto py-12"
+				className="max-w-xs md:max-w-5xl mx-auto py-8 md:py-12"
 				id="section4"
 			>
-				<div className="text-xl">
-					<p className="font-semibold text-base">What we believe?</p>
+				<div className="text-lg md:text-xl">
+					<p className="font-semibold text-sm md:text-base">What we believe?</p>
 					<p className="mt-2">
 						HOME is a small groups community by SPoT, Lorem ipsum dolor sit
 						amet, consectetur
@@ -196,13 +196,14 @@ export default function discipleship() {
 					<p>vestibulum metus, sed varius dolor libero mollis lacus.</p>
 				</div>
 			</motion.section>
+
 			<motion.section
 				initial={"offscreen"}
 				whileInView={"onscreen"}
 				variants={animate}
 				viewport={{ once: false, amount: 0.3 }}
 				id="section5"
-				className="max-w-5xl mx-auto flex gap-4 justify-between"
+				className="max-w-xs md:max-w-5xl mx-auto flex flex-col md:flex-row gap-4 md:justify-between py-3 md:py-0"
 			>
 				<Card
 					heading="Heading"
@@ -223,25 +224,26 @@ export default function discipleship() {
 					width="320"
 				/>
 			</motion.section>
+
 			<motion.section
 				initial={"offscreen"}
 				whileInView={"onscreen"}
 				variants={animate}
 				viewport={{ once: false, amount: 0.3 }}
-				className="max-w-5xl mx-auto py-28"
+				className="max-w-xs md:max-w-5xl mx-auto py-14 md:py-28 flex flex-col"
 				id="section6"
 			>
-				<div className="flex justify-between items-center">
-					<div className="font-semibold text-4xl">
+				<div className="flex flex-col md:flex-row justify-between items-center">
+					<div className="font-semibold text-3xl md:text-4xl">
 						<p>We're not meant to</p>
 						<p>live life by ourselves.</p>
 					</div>
-					<div className="font-medium text-xl me-24">
+					<div className="font-medium text-lg md:text-xl md:me-24 mt-3 md:mt-0">
 						<p>Join us and find your small groups</p>
 						<p>now in HOME!</p>
 					</div>
 				</div>
-				<div className="flex justify-center gap-3 mt-10">
+				<div className="flex flex-col md:flex-row md:justify-center gap-3 mt-3 md:mt-10">
 					<Button text="Counseling" />
 					<Button text="Contact Us" />
 				</div>
@@ -252,7 +254,7 @@ export default function discipleship() {
 				variants={animate}
 				viewport={{ once: false, amount: 0.3 }}
 				id="section7"
-				className="relative w-full h-[600px] -z-10"
+				className="hidden md:relative md:w-full md:h-[600px] md:-z-10"
 			>
 				<Image
 					src="/Discipleship_Banner_2.png"
