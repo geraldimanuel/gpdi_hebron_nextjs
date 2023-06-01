@@ -14,8 +14,8 @@ const merri = Merriweather({
 export default function Home() {
 	return (
 		<>
-			<section id="Section1" className="o">
-				<div id="Hero" className="min-h-screen relative">
+			<section id="Section1" className="">
+				<div id="Hero" className="h-[500px] md:min-h-screen relative">
 					<Image
 						src="/Banner.png"
 						alt="Banner"
@@ -24,18 +24,18 @@ export default function Home() {
 					/>
 					<div
 						id="Hero Text"
-						className="max-w-5xl mx-auto min-h-screen flex flex-col justify-center gap-6"
+						className="max-w-xs md:max-w-5xl mx-auto min-h-screen flex flex-col md:py-0 py-40  items-center md:items-start  md:justify-center gap-6"
 					>
 						<div className="flex flex-col">
-							<p className="text-md font-semibold tracking-[5px]">
+							<p className="text-sm md:text-base font-semibold tracking-[5px]">
 								Kami adalah
 							</p>
-							<h1 className="text-8xl font-bold">SPEAKER</h1>
+							<h1 className="text-6xl md:text-8xl font-bold">SPEAKER</h1>
 							<div className="flex flex-row gap-7">
 								<div className={merri.className}>
-									<h1 className="text-8xl font-medium">of</h1>
+									<h1 className="text-6xl md:text-8xl font-medium">of</h1>
 								</div>
-								<h1 className="text-8xl font-bold">TRUTH</h1>
+								<h1 className="text-6xl md:text-8xl font-bold">TRUTH</h1>
 							</div>
 						</div>
 						<div>
@@ -45,13 +45,13 @@ export default function Home() {
 				</div>
 				<Navbar />
 			</section>
-			<section id="Section2" className="max-w-5xl mx-auto pt-36">
+			<section id="Section2" className="max-w-xs md:max-w-5xl mx-auto md:pt-36">
 				<div className="grid grid-cols-2 grid-flow-col">
-					<div className="text-6xl font-bold">
+					<div className="text-3xl md:text-6xl font-bold">
 						<h1>Insert Text.</h1>
 						<h1>In Here.</h1>
 					</div>
-					<div className="text-2xl font-medium max-w-md">
+					<div className="text-base md:text-2xl font-medium max-w-md">
 						<h1>
 							Kami percaya bahwa hidup akan lebih baik jika dikelilingi oleh
 							orang-orang yang mendorong, mendukung, dan menantang kamu untuk
@@ -61,7 +61,10 @@ export default function Home() {
 				</div>
 			</section>
 
-			<section id="Section3" className="max-w-7xl mx-auto pt-36">
+			<section
+				id="Section3"
+				className="hidden max-w-xs md:max-w-7xl mx-auto md:pt-36"
+			>
 				<div className="relative">
 					<div className="grid grid-cols-3 gap-4 relative -z-10">
 						<div className="bg-red-700 h-72 relative">
@@ -121,7 +124,7 @@ export default function Home() {
 
 			<section
 				id="Section4"
-				className="max-w-5xl mx-auto text-2xl text-left leading-10 py-36"
+				className="max-w-xs md:max-w-5xl mx-auto text-xl md:text-2xl text-center md:text-left leading-10 py-14  md:py-36"
 			>
 				<div>
 					<span className="text-[#939090]">Kami hadir untuk </span>
@@ -136,8 +139,8 @@ export default function Home() {
 			</section>
 			<section id="Section5" className="relative -z-20">
 				<Image src="/Banner_2.png" fill className="object-cover -z-10" alt="" />
-				<div className="flex flex-col pt-14 max-w-5xl mx-auto ">
-					<div className="flex flex-col gap-2 bg-clip-text text-transparent bg-gradient-to-b from-[#D9D9D9] to-[#717171] font-medium text-5xl tracking-widest">
+				<div className="flex flex-col md:pt-14 max-w-xs  md:max-w-5xl mx-auto ">
+					<div className="flex flex-col md:gap-2 bg-clip-text text-transparent bg-gradient-to-b from-[#D9D9D9] to-[#717171] font-medium text-2xl md:text-5xl tracking-widest">
 						<p>Come, let us sing for joy to the</p>
 						<p>LORD; let us shout aloud to the</p>
 						<p>Rock of our salvation!</p>
@@ -145,15 +148,17 @@ export default function Home() {
 					<p className="font-medium italic text-xl text-[#717171]">
 						Psalm 95:1 (NIV)
 					</p>
-					<div className="pt-96">
-						<p className="text-3xl tracking-tight">Every Saturday,</p>
-						<div className="flex text-3xl">
+					<div className="pt-20 md:pt-96">
+						<p className="text-xl md:text-3xl tracking-tight">
+							Every Saturday,
+						</p>
+						<div className="flex text-xl md:text-3xl">
 							<p>
 								on{" "}
 								<span className="font-medium tracking-tight">17.00 WIB.</span>
 							</p>
 						</div>
-						<div className="flex gap-4 mt-3 pb-14">
+						<div className="flex flex-col md:flex-row gap-2  md:gap-4 mt-3 pb-14">
 							<Button text="Kontak Kami" />
 							<Button text="Arah Jalan" />
 						</div>
@@ -161,19 +166,26 @@ export default function Home() {
 				</div>
 			</section>
 
-			<section id="Section6" className="max-w-5xl mx-auto pt-36">
+			{/* <section id="Section6" className="max-w-5xl mx-auto pt-36">
 				<p className="text-5xl">Our Programs</p>
 				<div className="pt-10 flex flex-col gap-4">
 					<div className="relative h-80">
 						<div className="after:absolute after:inset-0 after:bg-[#2052D2] after:rounded-2xl after:mix-blend-multiply">
-							<Image src="/Banner_Home.png" fill className="object-cover rounded-2xl" alt="" />
+							<Image
+								src="/Banner_Home.png"
+								fill
+								className="object-cover rounded-2xl"
+								alt=""
+							/>
 						</div>
 						<div className="absolute h-80 flex items-center gap-10 w-full p-28">
 							<div className="drop-shadow-[6px_6px_0px_rgba(210,2,2,1)]">
-								<Image src="/Logo_Home.png" height={600} width={600} alt='' />
+								<Image src="/Logo_Home.png" height={600} width={600} alt="" />
 							</div>
 							<div className="flex flex-col gap-11">
-								<p className="text-2xl font-semibold tracking-tight">A small groups community to help you live within God's grace</p>
+								<p className="text-2xl font-semibold tracking-tight">
+									A small groups community to help you live within God's grace
+								</p>
 								<div className="flex gap-2.5">
 									<Button text="Counseling" />
 									<Button text="Learn More" />
@@ -184,14 +196,27 @@ export default function Home() {
 
 					<div className="relative h-80">
 						<div className="after:absolute after:inset-0 after:bg-[#952C2C] after:rounded-2xl after:mix-blend-multiply">
-							<Image src="/Banner_SPOT.png" fill className="object-cover rounded-2xl" alt="" />
+							<Image
+								src="/Banner_SPOT.png"
+								fill
+								className="object-cover rounded-2xl"
+								alt=""
+							/>
 						</div>
 						<div className="absolute h-80 items-center gap-5 flex w-full p-28">
 							<div>
-								<Image src="/Logo_SPOT_Service_Team.png" height={750} width={750} alt='' />
+								<Image
+									src="/Logo_SPOT_Service_Team.png"
+									height={750}
+									width={750}
+									alt=""
+								/>
 							</div>
 							<div className="flex flex-col gap-11">
-								<p className="text-2xl font-semibold tracking-tight">Service Team by SPoT who serves in Praise & Worship ministry, and more</p>
+								<p className="text-2xl font-semibold tracking-tight">
+									Service Team by SPoT who serves in Praise & Worship ministry,
+									and more
+								</p>
 								<div className="flex gap-2.5">
 									<Button text="Join our Team" />
 								</div>
@@ -199,11 +224,9 @@ export default function Home() {
 						</div>
 					</div>
 				</div>
-			</section>
+			</section> */}
 
-			<section id="Section7" className="mx-auto pt-36">
-				<Footer />
-			</section>
+			{/*<Footer />*/}
 		</>
 	);
 }
