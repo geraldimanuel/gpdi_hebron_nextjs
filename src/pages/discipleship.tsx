@@ -5,8 +5,18 @@ import { Navbar } from "@/components/Navbar/Navbar";
 import { Button } from "@/components/Button/Button";
 import { Footer } from "@/components/Footer/Footer";
 import { Card } from "@/components/Card/Card";
+import { motion, Variants } from "framer-motion";
 
 export default function discipleship() {
+	const animate = {
+		offscreen: { x: -100, opacity: 0 },
+		onscreen: {
+			x: 0,
+			opacity: 1,
+			transition: { delay: 0.2, duration: 2.5, type: "spring", bounce: 0.2 },
+		},
+	};
+
 	return (
 		<>
 			<section className="w-full h-[500px] relative" id="section1">
@@ -17,7 +27,13 @@ export default function discipleship() {
 					fill
 					className="object-cover -z-10"
 				/>
-				<div className="max-w-5xl mx-auto py-28">
+				<motion.div
+					initial={"offscreen"}
+					whileInView={"onscreen"}
+					variants={animate}
+					viewport={{ once: false, amount: 0.3 }}
+					className="max-w-5xl mx-auto py-28"
+				>
 					<Image
 						src="/logo_spot.png"
 						alt=""
@@ -27,9 +43,16 @@ export default function discipleship() {
 					/>
 					{/* image home kasih mb-8 ya!*/}
 					<Button text="Join Us" />
-				</div>
+				</motion.div>
 			</section>
-			<section className="max-w-5xl mx-auto py-10" id="section2">
+			<motion.section
+				initial={"offscreen"}
+				whileInView={"onscreen"}
+				variants={animate}
+				viewport={{ once: false, amount: 0.3 }}
+				className="max-w-5xl mx-auto py-10"
+				id="section2"
+			>
 				<div className="text-xl">
 					<p className="font-semibold text-base">What is HOME?</p>
 					<p className="mt-2">
@@ -42,8 +65,15 @@ export default function discipleship() {
 					</p>
 					<p>vestibulum metus, sed varius dolor libero mollis lacus.</p>
 				</div>
-			</section>
-			<section id="section3" className="max-w-5xl mx-auto py-14">
+			</motion.section>
+			<motion.section
+				initial={"offscreen"}
+				whileInView={"onscreen"}
+				variants={animate}
+				viewport={{ once: false, amount: 0.3 }}
+				id="section3"
+				className="max-w-5xl mx-auto py-14"
+			>
 				<div className="flex gap-4 items-center">
 					<div className="flex flex-col gap-4 justify-center">
 						<Image
@@ -145,8 +175,15 @@ export default function discipleship() {
 						/>
 					</div>
 				</div>
-			</section>
-			<section className="max-w-5xl mx-auto py-12" id="section4">
+			</motion.section>
+			<motion.section
+				initial={"offscreen"}
+				whileInView={"onscreen"}
+				variants={animate}
+				viewport={{ once: false, amount: 0.3 }}
+				className="max-w-5xl mx-auto py-12"
+				id="section4"
+			>
 				<div className="text-xl">
 					<p className="font-semibold text-base">What we believe?</p>
 					<p className="mt-2">
@@ -159,10 +196,14 @@ export default function discipleship() {
 					</p>
 					<p>vestibulum metus, sed varius dolor libero mollis lacus.</p>
 				</div>
-			</section>
-			<section
+			</motion.section>
+			<motion.section
+				initial={"offscreen"}
+				whileInView={"onscreen"}
+				variants={animate}
+				viewport={{ once: false, amount: 0.3 }}
 				id="section5"
-				className="max-w-5xl mx-auto flex gap-1 justify-between"
+				className="max-w-5xl mx-auto flex gap-4 justify-between"
 			>
 				<Card
 					heading="Heading"
@@ -182,8 +223,15 @@ export default function discipleship() {
 					height="380"
 					width="320"
 				/>
-			</section>
-			<section className="max-w-5xl mx-auto py-28" id="section6">
+			</motion.section>
+			<motion.section
+				initial={"offscreen"}
+				whileInView={"onscreen"}
+				variants={animate}
+				viewport={{ once: false, amount: 0.3 }}
+				className="max-w-5xl mx-auto py-28"
+				id="section6"
+			>
 				<div className="flex justify-between items-center">
 					<div className="font-semibold text-4xl">
 						<p>We're not meant to</p>
@@ -198,15 +246,22 @@ export default function discipleship() {
 					<Button text="Counseling" />
 					<Button text="Contact Us" />
 				</div>
-			</section>
-			<section id="section7" className="relative w-full h-[600px] -z-10">
+			</motion.section>
+			<motion.section
+				initial={"offscreen"}
+				whileInView={"onscreen"}
+				variants={animate}
+				viewport={{ once: false, amount: 0.3 }}
+				id="section7"
+				className="relative w-full h-[600px] -z-10"
+			>
 				<Image
 					src="/Discipleship_Banner_2.png"
 					fill
 					alt=""
 					className="object-cover"
 				/>
-			</section>
+			</motion.section>
 			<Footer />
 		</>
 	);
