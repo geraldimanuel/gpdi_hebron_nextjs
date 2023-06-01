@@ -34,13 +34,20 @@ export default function discipleship() {
 					className="flex flex-col items-center md:items-start px-10 md:px-0 max-w-xs md:max-w-5xl mx-auto py-32 md:py-28"
 				>
 					<Image
-						src="/logo_spot.png"
+						src="/Logo_Spot_White.png"
 						alt=""
 						width={170}
 						height={0}
-						className="mb-8"
+						className="mb-5"
 					/>
 					{/* image home kasih mb-8 ya!*/}
+					<Image
+						src="/logo_home.png"
+						alt=""
+						width={300}
+						height={0}
+						className="mb-5"
+					/>
 					<Button text="Join Us" />
 				</motion.div>
 			</section>
