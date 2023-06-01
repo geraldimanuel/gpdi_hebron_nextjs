@@ -2,10 +2,6 @@ import { Icon } from "@iconify/react";
 import Image from "next/image";
 import { useState } from "react";
 
-type Props = {
-	open: boolean;
-};
-
 export const Navbar = () => {
 	const [open, setOpen] = useState(false);
 

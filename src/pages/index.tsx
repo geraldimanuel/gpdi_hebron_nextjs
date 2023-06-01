@@ -18,7 +18,16 @@ export default function Home() {
 		onscreen: {
 			x: 0,
 			opacity: 1,
-			transition: { delay: 0.2, duration: 2.5, type: "spring", bounce: 0.2 },
+			transition: { delay: 0.2, duration: 1.5, type: "spring", bounce: 0.2 },
+		},
+	};
+
+	const animate_down = {
+		offscreen: { y: -100, opacity: 0 },
+		onscreen: {
+			y: 0,
+			opacity: 1,
+			transition: { delay: 0.2, duration: 1.5, type: "spring", bounce: 0.2 },
 		},
 	};
 	return (
@@ -35,7 +44,13 @@ export default function Home() {
 						id="Hero Text"
 						className="max-w-xs md:max-w-5xl mx-auto min-h-screen flex flex-col md:py-0 py-40  items-center md:items-start  md:justify-center gap-6"
 					>
-						<div className="flex flex-col">
+						<motion.div
+							initial={"offscreen"}
+							whileInView={"onscreen"}
+							variants={animate}
+							viewport={{ once: false, amount: 0.3 }}
+							className="flex flex-col"
+						>
 							<p className="text-sm md:text-base font-semibold tracking-[5px]">
 								Kami adalah
 							</p>
@@ -46,15 +61,27 @@ export default function Home() {
 								</div>
 								<h1 className="text-6xl md:text-8xl font-bold">TRUTH</h1>
 							</div>
-						</div>
-						<div>
+						</motion.div>
+						<motion.div
+							initial={"offscreen"}
+							whileInView={"onscreen"}
+							variants={animate}
+							viewport={{ once: false, amount: 0.3 }}
+						>
 							<Button text="Bergabung" />
-						</div>
+						</motion.div>
 					</div>
 				</div>
 				<Navbar />
 			</section>
-			<section id="Section2" className="max-w-xs md:max-w-5xl mx-auto md:pt-36">
+			<motion.section
+				initial={"offscreen"}
+				whileInView={"onscreen"}
+				variants={animate}
+				viewport={{ once: false, amount: 0.3 }}
+				id="Section2"
+				className="max-w-xs md:max-w-5xl mx-auto md:pt-36"
+			>
 				<div className="grid grid-cols-2 grid-flow-col">
 					<div className="text-3xl md:text-6xl font-bold">
 						<h1>Insert Text.</h1>
@@ -68,9 +95,13 @@ export default function Home() {
 						</h1>
 					</div>
 				</div>
-			</section>
+			</motion.section>
 
-			<section
+			<motion.section
+				initial={"offscreen"}
+				whileInView={"onscreen"}
+				variants={animate}
+				viewport={{ once: false, amount: 0.3 }}
 				id="Section3"
 				className="hidden max-w-xs md:max-w-7xl mx-auto md:pt-36"
 			>
@@ -129,9 +160,13 @@ export default function Home() {
 						</div>
 					</div>
 				</div>
-			</section>
+			</motion.section>
 
-			<section
+			<motion.section
+				initial={"offscreen"}
+				whileInView={"onscreen"}
+				variants={animate}
+				viewport={{ once: false, amount: 0.3 }}
 				id="Section4"
 				className="max-w-xs md:max-w-5xl mx-auto text-xl md:text-2xl text-center md:text-left leading-10 py-14  md:py-36"
 			>
@@ -145,10 +180,16 @@ export default function Home() {
 					</span>
 					<span>generasi yang akan datang.</span>
 				</div>
-			</section>
-			<section id="Section5" className="relative -z-20">
+			</motion.section>
+			<motion.section id="Section5" className="relative -z-20">
 				<Image src="/Banner_2.png" fill className="object-cover -z-10" alt="" />
-				<div className="flex flex-col md:pt-14 max-w-xs  md:max-w-5xl mx-auto ">
+				<motion.div
+					initial={"offscreen"}
+					whileInView={"onscreen"}
+					variants={animate_down}
+					viewport={{ once: false, amount: 0.3 }}
+					className="flex flex-col md:pt-14 max-w-xs  md:max-w-5xl mx-auto "
+				>
 					<div className="flex flex-col md:gap-2 bg-clip-text text-transparent bg-gradient-to-b from-[#D9D9D9] to-[#717171] font-medium text-2xl md:text-5xl tracking-widest">
 						<p>Come, let us sing for joy to the</p>
 						<p>LORD; let us shout aloud to the</p>
@@ -157,7 +198,13 @@ export default function Home() {
 					<p className="font-medium italic text-xl text-[#717171]">
 						Psalm 95:1 (NIV)
 					</p>
-					<div className="pt-20 md:pt-96">
+					<motion.div
+						initial={"offscreen"}
+						whileInView={"onscreen"}
+						variants={animate_down}
+						viewport={{ once: false, amount: 1 }}
+						className="pt-20 md:pt-96"
+					>
 						<p className="text-xl md:text-3xl tracking-tight">
 							Every Saturday,
 						</p>
@@ -171,14 +218,25 @@ export default function Home() {
 							<Button text="Kontak Kami" />
 							<Button text="Arah Jalan" />
 						</div>
-					</div>
-				</div>
-			</section>
+					</motion.div>
+				</motion.div>
+			</motion.section>
 
-			<section id="Section6" className="max-w-xs md:max-w-5xl mx-auto pt-36">
-				<p className="text-4xl text-center md:text-left md:text-5xl">Our Programs</p>
+			<section
+				id="Section6"
+				className="max-w-xs md:max-w-5xl mx-auto py-10 md:py-36"
+			>
+				<p className="text-4xl text-center md:text-left md:text-5xl">
+					Our Programs
+				</p>
 				<div className="pt-10 flex flex-col gap-4">
-					<div className="relative h-80">
+					<motion.div
+						initial={"offscreen"}
+						whileInView={"onscreen"}
+						variants={animate}
+						viewport={{ once: false, amount: 0.3 }}
+						className="relative h-80"
+					>
 						<div className="after:absolute after:inset-0 after:bg-[#2052D2] after:rounded-2xl after:mix-blend-multiply">
 							<Image
 								src="/Banner_Home.png"
@@ -201,9 +259,15 @@ export default function Home() {
 								</div>
 							</div>
 						</div>
-					</div>
+					</motion.div>
 
-					<div className="relative h-80">
+					<motion.div
+						initial={"offscreen"}
+						whileInView={"onscreen"}
+						variants={animate}
+						viewport={{ once: false, amount: 0.3 }}
+						className="relative h-80"
+					>
 						<div className="after:absolute after:inset-0 after:bg-[#952C2C] after:rounded-2xl after:mix-blend-multiply">
 							<Image
 								src="/Banner_SPOT.png"
@@ -212,7 +276,7 @@ export default function Home() {
 								alt=""
 							/>
 						</div>
-						<div className="absolute h-80 flex flex-col md:flex-row items-center gap-5 flex w-full md:p-28 p-6 pt-10">
+						<div className="absolute h-80 flex flex-col md:flex-row items-center gap-5 w-full md:p-28 p-6 pt-10">
 							<div>
 								<Image
 									src="/Logo_SPOT_Service_Team.png"
@@ -231,11 +295,11 @@ export default function Home() {
 								</div>
 							</div>
 						</div>
-					</div>
+					</motion.div>
 				</div>
 			</section>
 
-			{/*<Footer />*/}
+			<Footer />
 		</>
 	);
 }
