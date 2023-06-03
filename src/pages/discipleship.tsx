@@ -220,20 +220,14 @@ export default function discipleship() {
 				<Card
 					heading="Heading"
 					text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel convallis lacus. Nam at ultrices nulla. Nam sed hendrerit magna, vel finibus nulla."
-					height="380"
-					width="320"
 				/>
 				<Card
 					heading="Heading"
 					text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel convallis lacus. Nam at ultrices nulla. Nam sed hendrerit magna, vel finibus nulla."
-					height="380"
-					width="320"
 				/>
 				<Card
 					heading="Heading"
 					text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel convallis lacus. Nam at ultrices nulla. Nam sed hendrerit magna, vel finibus nulla."
-					height="380"
-					width="320"
 				/>
 			</motion.section>
 
