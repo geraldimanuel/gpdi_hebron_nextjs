@@ -47,7 +47,7 @@ export default function Home() {
 					/>
 					<div
 						id="Hero Text"
-						className="max-w-xs md:max-w-5xl mx-auto min-h-screen flex flex-col md:py-0 py-40  items-center md:items-start  md:justify-center gap-6"
+						className="max-w-xs md:max-w-5xl mx-auto min-h-screen flex flex-col md:py-0 py-40 md:px-8 items-center md:items-start  md:justify-center gap-6"
 					>
 						<motion.div
 							initial={"offscreen"}
@@ -85,7 +85,7 @@ export default function Home() {
 				variants={animate}
 				viewport={{ once: false, amount: 0.3 }}
 				id="Section2"
-				className="max-w-xs md:max-w-5xl mx-auto md:pt-36"
+				className="max-w-xs md:max-w-5xl mx-auto md:pt-36 md:px-8"
 			>
 				<div className="grid grid-cols-2 grid-flow-col">
 					<div className="text-3xl md:text-6xl font-bold">
@@ -108,7 +108,7 @@ export default function Home() {
 				variants={animate}
 				viewport={{ once: false, amount: 0.3 }}
 				id="Section3"
-				className="hidden max-w-xs md:max-w-7xl mx-auto md:pt-36"
+				className="xs:hidden max-w-xs md:max-w-7xl mx-auto md:pt-36 md:px-8"
 			>
 				<div className="relative">
 					<div className="grid grid-cols-3 gap-4 relative -z-10">
@@ -173,7 +173,7 @@ export default function Home() {
 				variants={animate}
 				viewport={{ once: false, amount: 0.3 }}
 				id="Section4"
-				className="max-w-xs md:max-w-5xl mx-auto text-xl md:text-2xl text-center md:text-left leading-10 py-14  md:py-36"
+				className="max-w-xs md:max-w-5xl mx-auto text-xl md:text-2xl md:px-8 text-center md:text-left leading-10 py-14  md:py-36"
 			>
 				<div>
 					<span className="text-[#939090]">Kami hadir untuk </span>
@@ -198,7 +198,7 @@ export default function Home() {
 					whileInView={"onscreen"}
 					variants={animate_down}
 					viewport={{ once: false, amount: 0.3 }}
-					className="flex flex-col md:pt-14 max-w-xs  md:max-w-5xl mx-auto "
+					className="flex flex-col md:pt-14 max-w-xs  md:max-w-5xl mx-auto   md:px-8 "
 				>
 					<div className="flex flex-col md:gap-2 bg-clip-text text-transparent bg-gradient-to-b from-[#D9D9D9] to-[#717171] font-medium text-2xl md:text-5xl tracking-widest">
 						<p>Come, let us sing for joy to the</p>
@@ -212,7 +212,7 @@ export default function Home() {
 						initial={"offscreen"}
 						whileInView={"onscreen"}
 						variants={animate_down}
-						viewport={{ once: false, amount: 1 }}
+						viewport={{ once: false, amount: 0.3 }}
 						className="pt-20 md:pt-96"
 					>
 						<p className="text-xl md:text-3xl tracking-tight">
@@ -234,7 +234,7 @@ export default function Home() {
 
 			<section
 				id="Section6"
-				className="max-w-xs md:max-w-5xl mx-auto -z-10 py-10 md:py-36"
+				className="max-w-xs md:max-w-5xl mx-auto -z-10 py-10 md:py-36   md:px-8"
 			>
 				<motion.p
 					initial={"offscreen"}

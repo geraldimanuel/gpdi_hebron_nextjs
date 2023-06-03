@@ -36,7 +36,7 @@ export default function discipleship() {
 					whileInView={"onscreen"}
 					variants={animate}
 					viewport={{ once: false, amount: 0.3 }}
-					className="flex flex-col items-center md:items-start px-10 md:px-0 max-w-xs md:max-w-5xl mx-auto py-32 md:py-28"
+					className="flex flex-col items-center md:items-start px-10 md:px-8 max-w-xs md:max-w-5xl mx-auto py-32 md:py-28 "
 				>
 					<Image
 						src="/Logo_Spot_White.webp"
@@ -61,7 +61,7 @@ export default function discipleship() {
 				whileInView={"onscreen"}
 				variants={animate}
 				viewport={{ once: false, amount: 0.3 }}
-				className="max-w-xs md:max-w-5xl mx-auto py-0 md:py-10"
+				className="max-w-xs md:max-w-5xl mx-auto py-0 md:py-10 md:px-8"
 				id="section2"
 			>
 				<div className="text-lg md:text-xl">
@@ -83,7 +83,7 @@ export default function discipleship() {
 				variants={animate}
 				viewport={{ once: false, amount: 0.3 }}
 				id="section3"
-				className="max-w-xs md:max-w-5xl mx-auto py-8 md:py-14"
+				className="max-w-xs md:max-w-5xl mx-auto py-8 md:py-14   md:px-8"
 			>
 				<div className="flex gap-4 items-center">
 					<div className="flex flex-col gap-4 justify-center">
@@ -192,7 +192,7 @@ export default function discipleship() {
 				whileInView={"onscreen"}
 				variants={animate}
 				viewport={{ once: false, amount: 0.3 }}
-				className="max-w-xs md:max-w-5xl mx-auto py-8 md:py-12"
+				className="max-w-xs md:max-w-5xl mx-auto py-8 md:py-12   md:px-8"
 				id="section4"
 			>
 				<div className="text-lg md:text-xl">
@@ -215,7 +215,7 @@ export default function discipleship() {
 				variants={animate}
 				viewport={{ once: false, amount: 0.3 }}
 				id="section5"
-				className="max-w-xs md:max-w-5xl mx-auto flex flex-col md:flex-row gap-4 md:justify-between py-3 md:py-0 -z-20"
+				className="max-w-xs md:max-w-5xl mx-auto flex flex-col md:flex-row gap-4 md:justify-between py-3 md:py-0 -z-20   md:px-8"
 			>
 				<Card
 					heading="Heading"
@@ -242,7 +242,7 @@ export default function discipleship() {
 				whileInView={"onscreen"}
 				variants={animate}
 				viewport={{ once: false, amount: 0.3 }}
-				className="max-w-xs md:max-w-5xl mx-auto py-14 md:py-28 flex flex-col"
+				className="max-w-xs md:max-w-5xl mx-auto py-14 md:py-28 flex flex-col   md:px-8"
 				id="section6"
 			>
 				<div className="flex flex-col md:flex-row justify-between items-center">
