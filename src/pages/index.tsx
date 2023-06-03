@@ -133,11 +133,11 @@ export default function Home() {
 				<div className="relative">
 					<div className="grid grid-cols-3 gap-4 relative -z-10">
 						<div className="bg-red-700 h-72 relative">
-							<Image src="/Stockphoto.jpg" alt="Stockphoto" fill />
+							<Image src="/Stockphoto.webp" alt="Stockphoto" fill />
 						</div>
 						<div className="bg-red-700 h-72 col-span-2 relative">
 							<Image
-								src="/Stockphoto.jpg"
+								src="/Stockphoto.webp"
 								alt="Stockphoto"
 								fill
 								className="object-cover"
@@ -145,7 +145,7 @@ export default function Home() {
 						</div>
 						<div className="bg-red-700 h-72 col-span-2 relative">
 							<Image
-								src="/Stockphoto.jpg"
+								src="/Stockphoto.webp"
 								alt="Stockphoto"
 								fill
 								className="object-cover"
