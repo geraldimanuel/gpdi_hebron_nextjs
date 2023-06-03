@@ -365,7 +365,7 @@ export default function discipleship() {
 				variants={animate}
 				viewport={{ once: false, amount: 0.3 }}
 				id="section7"
-				className="xs:hidden md:relative md:w-full md:h-[600px] md:-z-10"
+				className="hidden md:block md:relative md:w-full md:h-[600px] md:-z-10"
 			>
 				<Image
 					src="/Discipleship_Banner_2.webp"

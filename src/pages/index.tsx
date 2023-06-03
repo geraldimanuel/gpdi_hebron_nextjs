@@ -127,7 +127,7 @@ export default function Home() {
 				variants={animate}
 				viewport={{ once: false, amount: 0.1 }}
 				id="Section3"
-				className="xs:hidden max-w-xs md:max-w-7xl mx-auto md:pt-36 md:px-8"
+				className="hidden md:block max-w-xs md:max-w-7xl mx-auto md:pt-36 md:px-8"
 			>
 				<div className="relative">
 					<div className="grid grid-cols-3 gap-4 relative -z-10">
