@@ -56,7 +56,7 @@ export default function Home() {
 					/>
 					<div
 						id="Hero Text"
-						className="max-w-xs md:max-w-5xl mx-auto min-h-screen flex flex-col md:py-0 py-40 md:px-8 items-center md:items-start  md:justify-center gap-6"
+						className="max-w-xs md:max-w-5xl mx-auto min-h-screen flex flex-col md:py-0 py-40 md:px-8 items-center md:items-start md:justify-center gap-6"
 					>
 						<motion.div
 							initial={"offscreen"}
@@ -205,14 +205,14 @@ export default function Home() {
 					<span>generasi yang akan datang.</span>
 				</div>
 			</motion.section>
-			<section id="Section5" className="relative -z-20">
+			<section id="Section5" className="relative">
 				<Image
 					src="/Banner_2.webp"
 					fill
 					className="object-cover -z-10"
 					alt=""
 				/>
-				<div className="flex flex-col md:pt-14 max-w-xs  md:max-w-5xl mx-auto   md:px-8 ">
+				<div className="flex flex-col md:pt-14 max-w-xs md:max-w-5xl mx-auto md:px-8 ">
 					<motion.div
 						initial={"offscreen"}
 						whileInView={"onscreen"}
@@ -249,7 +249,7 @@ export default function Home() {
 								<span className="font-medium tracking-tight">17.00 WIB.</span>
 							</p>
 						</div>
-						<div className="flex flex-col md:flex-row gap-2  md:gap-4 mt-3 pb-14">
+						<div className="flex flex-col md:flex-row gap-2 md:gap-4 mt-3 pb-14">
 							<Button text="Kontak Kami" />
 							<Button text="Arah Jalan" />
 						</div>
@@ -259,7 +259,7 @@ export default function Home() {
 
 			<section
 				id="Section6"
-				className="max-w-xs md:max-w-5xl mx-auto -z-10 py-10 md:py-36   md:px-8"
+				className="max-w-xs md:max-w-5xl mx-auto py-10 md:py-36 md:px-8"
 			>
 				<motion.p
 					initial={"offscreen"}
@@ -270,13 +270,13 @@ export default function Home() {
 				>
 					Our Programs
 				</motion.p>
-				<div className="pt-10 flex flex-col gap-4 -z-20">
+				<div className="pt-10 flex flex-col gap-4">
 					<motion.div
 						initial={"offscreen"}
 						whileInView={"onscreen"}
 						variants={animate}
 						viewport={{ once: false, amount: 0.1 }}
-						className="relative h-80 -z-30"
+						className="relative h-80"
 					>
 						<div className="after:absolute after:inset-0 after:bg-[#2052D2] after:rounded-2xl after:mix-blend-multiply">
 							<Image
@@ -307,7 +307,7 @@ export default function Home() {
 						whileInView={"onscreen"}
 						variants={animate}
 						viewport={{ once: false, amount: 0.1 }}
-						className="relative h-80 -z-30"
+						className="relative h-80"
 					>
 						<div className="after:absolute after:inset-0 after:bg-[#952C2C] after:rounded-2xl after:mix-blend-multiply">
 							<Image
