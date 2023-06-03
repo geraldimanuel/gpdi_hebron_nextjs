@@ -5,6 +5,7 @@ import { Button } from "@/components/Button/Button";
 import { Footer } from "@/components/Footer/Footer";
 import { Card } from "@/components/Card/Card";
 import { motion } from "framer-motion";
+import Head from "next/head";
 
 export default function discipleship() {
 	const animate = {
@@ -18,6 +19,10 @@ export default function discipleship() {
 
 	return (
 		<>
+			<Head>
+				<title>GPdI Hebron | HoME</title>
+				<meta name="description" content="Meta description for the Home page" />
+			</Head>
 			<section className="w-full h-[500px] relative" id="section1">
 				<Navbar />
 				<Image
