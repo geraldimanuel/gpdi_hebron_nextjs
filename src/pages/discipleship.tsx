@@ -17,6 +17,24 @@ export default function discipleship() {
 		},
 	};
 
+	const animate_down = {
+		offscreen: { y: -100, opacity: 0 },
+		onscreen: {
+			y: 0,
+			opacity: 1,
+			transition: { duration: 0.5, delay: 0.3 },
+		},
+	};
+
+	const animate_down_up = {
+		offscreen: { y: -100, opacity: 0 },
+		onscreen: {
+			y: 0,
+			opacity: 1,
+			transition: { duration: 0.5 },
+		},
+	};
+
 	return (
 		<>
 			<Head>
@@ -77,116 +95,203 @@ export default function discipleship() {
 					<p>vestibulum metus, sed varius dolor libero mollis lacus.</p>
 				</div>
 			</motion.section>
-			<motion.section
-				initial={"offscreen"}
-				whileInView={"onscreen"}
-				variants={animate}
-				viewport={{ once: false, amount: 0.3 }}
+			<section
 				id="section3"
 				className="max-w-xs md:max-w-5xl mx-auto py-8 md:py-14   md:px-8"
 			>
 				<div className="flex gap-4 items-center">
 					<div className="flex flex-col gap-4 justify-center">
-						<Image
-							src="/group_image/1.png"
-							alt="Stockphoto"
-							width={250}
-							height={0}
-							className="object-cover"
-						/>
-						<Image
-							src="/group_image/2.png"
-							alt="Stockphoto"
-							width={250}
-							height={0}
-							className="object-cover"
-						/>
-						<Image
-							src="/group_image/3.png"
-							alt="Stockphoto"
-							width={250}
-							height={0}
-							className="object-cover"
-						/>
+						<motion.span
+							initial={"offscreen"}
+							whileInView={"onscreen"}
+							variants={animate_down}
+							viewport={{ once: false, amount: 0.1 }}
+						>
+							<Image
+								src="/group_image/1.png"
+								alt="Stockphoto"
+								width={250}
+								height={0}
+								className="object-cover"
+							/>
+						</motion.span>
+						<motion.span
+							initial={"offscreen"}
+							whileInView={"onscreen"}
+							variants={animate_down}
+							viewport={{ once: false, amount: 0.1 }}
+						>
+							<Image
+								src="/group_image/2.png"
+								alt="Stockphoto"
+								width={250}
+								height={0}
+								className="object-cover"
+							/>
+						</motion.span>
+						<motion.span
+							initial={"offscreen"}
+							whileInView={"onscreen"}
+							variants={animate_down}
+							viewport={{ once: false, amount: 0.1 }}
+						>
+							<Image
+								src="/group_image/3.png"
+								alt="Stockphoto"
+								width={250}
+								height={0}
+								className="object-cover"
+							/>
+						</motion.span>
 					</div>
 					<div className="flex flex-col gap-4">
-						<Image
-							src="/group_image/4.png"
-							alt="Stockphoto"
-							width={250}
-							height={0}
-							className="object-cover"
-						/>
-						<Image
-							src="/group_image/5.png"
-							alt="Stockphoto"
-							width={250}
-							height={0}
-							className="object-cover"
-						/>
-						<Image
-							src="/group_image/6.png"
-							alt="Stockphoto"
-							width={250}
-							height={0}
-							className="object-cover"
-						/>
+						<motion.span
+							initial={"offscreen"}
+							whileInView={"onscreen"}
+							variants={animate_down_up}
+							viewport={{ once: false, amount: 0.1 }}
+						>
+							<Image
+								src="/group_image/4.png"
+								alt="Stockphoto"
+								width={250}
+								height={0}
+								className="object-cover"
+							/>
+						</motion.span>
+						<motion.span
+							initial={"offscreen"}
+							whileInView={"onscreen"}
+							variants={animate_down_up}
+							viewport={{ once: false, amount: 0.1 }}
+						>
+							<Image
+								src="/group_image/5.png"
+								alt="Stockphoto"
+								width={250}
+								height={0}
+								className="object-cover"
+							/>
+						</motion.span>
+						<motion.span
+							initial={"offscreen"}
+							whileInView={"onscreen"}
+							variants={animate_down_up}
+							viewport={{ once: false, amount: 0.1 }}
+						>
+							<Image
+								src="/group_image/6.png"
+								alt="Stockphoto"
+								width={250}
+								height={0}
+								className="object-cover"
+							/>
+						</motion.span>
 					</div>
 					<div className="flex flex-col gap-4 justify-center">
-						<Image
-							src="/group_image/7.png"
-							alt="Stockphoto"
-							width={250}
-							height={0}
-							className="object-cover"
-						/>
-						<Image
-							src="/group_image/8.png"
-							alt="Stockphoto"
-							width={250}
-							height={0}
-							className="object-cover"
-						/>
-						<Image
-							src="/group_image/9.png"
-							alt="Stockphoto"
-							width={250}
-							height={0}
-							className="object-cover"
-						/>
+						<motion.span
+							initial={"offscreen"}
+							whileInView={"onscreen"}
+							variants={animate_down}
+							viewport={{ once: false, amount: 0.1 }}
+						>
+							<Image
+								src="/group_image/7.png"
+								alt="Stockphoto"
+								width={250}
+								height={0}
+								className="object-cover"
+							/>
+						</motion.span>
+						<motion.span
+							initial={"offscreen"}
+							whileInView={"onscreen"}
+							variants={animate_down}
+							viewport={{ once: false, amount: 0.1 }}
+						>
+							<Image
+								src="/group_image/8.png"
+								alt="Stockphoto"
+								width={250}
+								height={0}
+								className="object-cover"
+							/>
+						</motion.span>
+						<motion.span
+							initial={"offscreen"}
+							whileInView={"onscreen"}
+							variants={animate_down}
+							viewport={{ once: false, amount: 0.1 }}
+						>
+							<Image
+								src="/group_image/9.png"
+								alt="Stockphoto"
+								width={250}
+								height={0}
+								className="object-cover"
+							/>
+						</motion.span>
 					</div>
 					<div className="flex flex-col gap-4">
-						<Image
-							src="/group_image/10.png"
-							alt="Stockphoto"
-							width={250}
-							height={0}
-							className="object-cover"
-						/>
-						<Image
-							src="/group_image/11.png"
-							alt="Stockphoto"
-							width={250}
-							height={0}
-							className="object-cover"
-						/>
-						<Image
-							src="/group_image/12.png"
-							alt="Stockphoto"
-							width={250}
-							height={0}
-							className="object-cover"
-						/>
-						<Image
-							src="/group_image/13.png"
-							alt="Stockphoto"
-							width={250}
-							height={0}
-							className="object-cover"
-						/>
+						<motion.span
+							initial={"offscreen"}
+							whileInView={"onscreen"}
+							variants={animate_down_up}
+							viewport={{ once: false, amount: 0.1 }}
+						>
+							<Image
+								src="/group_image/10.png"
+								alt="Stockphoto"
+								width={250}
+								height={0}
+								className="object-cover"
+							/>
+						</motion.span>
+						<motion.span
+							initial={"offscreen"}
+							whileInView={"onscreen"}
+							variants={animate_down_up}
+							viewport={{ once: false, amount: 0.1 }}
+						>
+							<Image
+								src="/group_image/11.png"
+								alt="Stockphoto"
+								width={250}
+								height={0}
+								className="object-cover"
+							/>
+						</motion.span>
+						<motion.span
+							initial={"offscreen"}
+							whileInView={"onscreen"}
+							variants={animate_down_up}
+							viewport={{ once: false, amount: 0.1 }}
+						>
+							<Image
+								src="/group_image/12.png"
+								alt="Stockphoto"
+								width={250}
+								height={0}
+								className="object-cover"
+							/>
+						</motion.span>
+						<motion.span
+							initial={"offscreen"}
+							whileInView={"onscreen"}
+							variants={animate_down_up}
+							viewport={{ once: false, amount: 0.1 }}
+						>
+							<Image
+								src="/group_image/13.png"
+								alt="Stockphoto"
+								width={250}
+								height={0}
+								className="object-cover"
+							/>
+						</motion.span>
 					</div>
 				</div>
-			</motion.section>
+			</section>
 			<motion.section
 				initial={"offscreen"}
 				whileInView={"onscreen"}
