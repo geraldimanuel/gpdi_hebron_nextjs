@@ -31,7 +31,7 @@ export const Navbar = () => {
 					<Icon icon="akar-icons:cross" width={25} />
 				) : (
 					<>
-						<Image src="/Hebron.png" alt="" width={25} height={0}></Image>
+						<Image src="/Hebron.webp" alt="" width={25} height={0}></Image>
 						<Icon icon="mdi-light:menu" width={25} className="text-[#0A0C0F]" />
 					</>
 				)}

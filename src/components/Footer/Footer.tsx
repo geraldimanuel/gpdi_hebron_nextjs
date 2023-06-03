@@ -8,7 +8,7 @@ export const Footer = () => {
 			<div className="max-w-xs md:max-w-5xl mx-auto flex flex-col md:flex-row py-6 md:py-14 gap-8 md:gap-28 md:px-8">
 				<div className="flex flex-col gap-2">
 					<div className="flex items-center gap-3">
-						<Image src="/Hebron.png" alt="hebron" width={60} height={100} />
+						<Image src="/Hebron.webp" alt="hebron" width={60} height={100} />
 						<div className=" text-[#00347E]">
 							<p className="font-semibold text-2xl">GPdI Hebron</p>
 							<p className="font-medium text-sm -mt-2">Gading Serpong</p>
