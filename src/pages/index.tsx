@@ -152,7 +152,7 @@ export default function Home() {
 							/>
 						</div>
 						<div className="bg-red-700 h-72 relative">
-							<Image src="/Stockphoto.jpg" alt="Stockphoto" fill />
+							<Image src="/Stockphoto.webp" alt="Stockphoto" fill />
 						</div>
 					</div>
 
