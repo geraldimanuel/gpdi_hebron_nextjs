@@ -19,7 +19,16 @@ export default function Home() {
 		onscreen: {
 			x: 0,
 			opacity: 1,
-			transition: { delay: 0.2, duration: 1.5, type: "spring", bounce: 0.2 },
+			transition: { duration: 1 },
+		},
+	};
+
+	const animate_staged = {
+		offscreen: { x: -100, opacity: 0 },
+		onscreen: {
+			x: 0,
+			opacity: 1,
+			transition: { delay: 0.2, duration: 1 },
 		},
 	};
 
@@ -28,7 +37,7 @@ export default function Home() {
 		onscreen: {
 			y: 0,
 			opacity: 1,
-			transition: { delay: 0.2, duration: 1.5, type: "spring", bounce: 0.2 },
+			transition: { duration: 1 },
 		},
 	};
 	return (
@@ -53,7 +62,7 @@ export default function Home() {
 							initial={"offscreen"}
 							whileInView={"onscreen"}
 							variants={animate}
-							viewport={{ once: false, amount: 0.3 }}
+							viewport={{ once: false, amount: 0.1 }}
 							className="flex flex-col"
 						>
 							<p className="text-sm md:text-base font-semibold tracking-[5px]">
@@ -71,7 +80,7 @@ export default function Home() {
 							initial={"offscreen"}
 							whileInView={"onscreen"}
 							variants={animate}
-							viewport={{ once: false, amount: 0.3 }}
+							viewport={{ once: false, amount: 0.1 }}
 						>
 							<Button text="Bergabung" />
 						</motion.div>
@@ -79,34 +88,44 @@ export default function Home() {
 				</div>
 				<Navbar />
 			</section>
-			<motion.section
-				initial={"offscreen"}
-				whileInView={"onscreen"}
-				variants={animate}
-				viewport={{ once: false, amount: 0.3 }}
+			<section
 				id="Section2"
 				className="max-w-xs md:max-w-5xl mx-auto md:pt-36 md:px-8"
 			>
 				<div className="grid grid-cols-2 grid-flow-col">
-					<div className="text-3xl md:text-6xl font-bold">
+					<motion.div
+						initial={"offscreen"}
+						whileInView={"onscreen"}
+						transition={{ staggerChildren: 0.5 }}
+						variants={animate}
+						viewport={{ once: false, amount: 0.1 }}
+						className="text-3xl md:text-6xl font-bold"
+					>
 						<h1>Insert Text.</h1>
 						<h1>In Here.</h1>
-					</div>
-					<div className="text-base md:text-2xl font-medium max-w-md">
+					</motion.div>
+					<motion.div
+						initial={"offscreen"}
+						whileInView={"onscreen"}
+						transition={{ staggerChildren: 0.5 }}
+						variants={animate_staged}
+						viewport={{ once: false, amount: 0.1 }}
+						className="text-base md:text-2xl font-medium max-w-md"
+					>
 						<h1>
 							Kami percaya bahwa hidup akan lebih baik jika dikelilingi oleh
 							orang-orang yang mendorong, mendukung, dan menantang kamu untuk
 							bertumbuh dalam hubungan dengan Kristus.
 						</h1>
-					</div>
+					</motion.div>
 				</div>
-			</motion.section>
+			</section>
 
 			<motion.section
 				initial={"offscreen"}
 				whileInView={"onscreen"}
 				variants={animate}
-				viewport={{ once: false, amount: 0.3 }}
+				viewport={{ once: false, amount: 0.1 }}
 				id="Section3"
 				className="xs:hidden max-w-xs md:max-w-7xl mx-auto md:pt-36 md:px-8"
 			>
@@ -171,7 +190,7 @@ export default function Home() {
 				initial={"offscreen"}
 				whileInView={"onscreen"}
 				variants={animate}
-				viewport={{ once: false, amount: 0.3 }}
+				viewport={{ once: false, amount: 0.1 }}
 				id="Section4"
 				className="max-w-xs md:max-w-5xl mx-auto text-xl md:text-2xl md:px-8 text-center md:text-left leading-10 py-14  md:py-36"
 			>
@@ -186,33 +205,39 @@ export default function Home() {
 					<span>generasi yang akan datang.</span>
 				</div>
 			</motion.section>
-			<motion.section id="Section5" className="relative -z-20">
+			<section id="Section5" className="relative -z-20">
 				<Image
 					src="/Banner_2.webp"
 					fill
 					className="object-cover -z-10"
 					alt=""
 				/>
-				<motion.div
-					initial={"offscreen"}
-					whileInView={"onscreen"}
-					variants={animate_down}
-					viewport={{ once: false, amount: 0.3 }}
-					className="flex flex-col md:pt-14 max-w-xs  md:max-w-5xl mx-auto   md:px-8 "
-				>
-					<div className="flex flex-col md:gap-2 bg-clip-text text-transparent bg-gradient-to-b from-[#D9D9D9] to-[#717171] font-medium text-2xl md:text-5xl tracking-widest">
-						<p>Come, let us sing for joy to the</p>
-						<p>LORD; let us shout aloud to the</p>
-						<p>Rock of our salvation!</p>
-					</div>
-					<p className="font-medium italic text-xl text-[#717171]">
-						Psalm 95:1 (NIV)
-					</p>
+				<div className="flex flex-col md:pt-14 max-w-xs  md:max-w-5xl mx-auto   md:px-8 ">
 					<motion.div
 						initial={"offscreen"}
 						whileInView={"onscreen"}
 						variants={animate_down}
-						viewport={{ once: false, amount: 0.3 }}
+						viewport={{ once: false, amount: 0.1 }}
+						className="flex flex-col md:gap-2 bg-clip-text text-transparent bg-gradient-to-b from-[#D9D9D9] to-[#717171] font-medium text-2xl md:text-5xl tracking-widest"
+					>
+						<p>Come, let us sing for joy to the</p>
+						<p>LORD; let us shout aloud to the</p>
+						<p>Rock of our salvation!</p>
+					</motion.div>
+					<motion.p
+						initial={"offscreen"}
+						whileInView={"onscreen"}
+						variants={animate_down}
+						viewport={{ once: false, amount: 0.1 }}
+						className="font-medium italic text-xl text-[#717171]"
+					>
+						Psalm 95:1 (NIV)
+					</motion.p>
+					<motion.div
+						initial={"offscreen"}
+						whileInView={"onscreen"}
+						variants={animate_down}
+						viewport={{ once: false, amount: 0.1 }}
 						className="pt-20 md:pt-96"
 					>
 						<p className="text-xl md:text-3xl tracking-tight">
@@ -229,8 +254,8 @@ export default function Home() {
 							<Button text="Arah Jalan" />
 						</div>
 					</motion.div>
-				</motion.div>
-			</motion.section>
+				</div>
+			</section>
 
 			<section
 				id="Section6"
@@ -240,7 +265,7 @@ export default function Home() {
 					initial={"offscreen"}
 					whileInView={"onscreen"}
 					variants={animate}
-					viewport={{ once: false, amount: 0.3 }}
+					viewport={{ once: false, amount: 0.1 }}
 					className="text-4xl text-center md:text-left md:text-5xl"
 				>
 					Our Programs
@@ -250,7 +275,7 @@ export default function Home() {
 						initial={"offscreen"}
 						whileInView={"onscreen"}
 						variants={animate}
-						viewport={{ once: false, amount: 0.5 }}
+						viewport={{ once: false, amount: 0.1 }}
 						className="relative h-80 -z-30"
 					>
 						<div className="after:absolute after:inset-0 after:bg-[#2052D2] after:rounded-2xl after:mix-blend-multiply">
@@ -281,7 +306,7 @@ export default function Home() {
 						initial={"offscreen"}
 						whileInView={"onscreen"}
 						variants={animate}
-						viewport={{ once: false, amount: 0.5 }}
+						viewport={{ once: false, amount: 0.1 }}
 						className="relative h-80 -z-30"
 					>
 						<div className="after:absolute after:inset-0 after:bg-[#952C2C] after:rounded-2xl after:mix-blend-multiply">
