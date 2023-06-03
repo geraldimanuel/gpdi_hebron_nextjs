@@ -5,6 +5,7 @@ import { Button } from "@/components/Button/Button";
 import { SpotSVG } from "@/components/SpotSVG/SpotSVG";
 import { Footer } from "@/components/Footer/Footer";
 import { motion } from "framer-motion";
+import Head from "next/head";
 
 const merri = Merriweather({
 	subsets: ["latin"],
@@ -32,6 +33,10 @@ export default function Home() {
 	};
 	return (
 		<>
+			<Head>
+				<title>GPdI Hebron | SPoT</title>
+				<meta name="description" content="Meta description for the Home page" />
+			</Head>
 			<section id="Section1" className="">
 				<div id="Hero" className="h-[500px] md:min-h-screen relative">
 					<Image
