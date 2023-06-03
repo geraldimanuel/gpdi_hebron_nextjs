@@ -68,20 +68,14 @@ export const Navbar = () => {
 							<p className="text-[#00347E] text-4xl font-semibold mt-4">Spot</p>
 							<div className="mt-4 flex flex-col gap-2">
 								<Link href="/">
-									<motion.p
-										whileHover={{ scale: 1.1 }}
-										className="text-[#00347E] text-base font-medium"
-									>
+									<p className="text-[#00347E] text-base font-medium">
 										Tentang Spot
-									</motion.p>
+									</p>
 								</Link>
 								<Link href="/discipleship">
-									<motion.p
-										whileHover={{ scale: 1.1 }}
-										className="text-[#00347E] text-base font-medium"
-									>
+									<p className="text-[#00347E] text-base font-medium">
 										Komsel HoME
-									</motion.p>
+									</p>
 								</Link>
 							</div>
 						</div>
