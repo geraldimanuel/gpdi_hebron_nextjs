@@ -10,7 +10,7 @@ const work = Work_Sans({
 export default function App({ Component, pageProps }: AppProps) {
 	return (
 		<main className={work.className}>
-			<Component {...pageProps} />;
+			<Component {...pageProps} />
 		</main>
 	);
 }
