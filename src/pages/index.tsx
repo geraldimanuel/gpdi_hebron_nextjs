@@ -6,6 +6,7 @@ import { SpotSVG } from "@/components/SpotSVG/SpotSVG";
 import { Footer } from "@/components/Footer/Footer";
 import { motion } from "framer-motion";
 import Head from "next/head";
+import Link from "next/link";
 
 const merri = Merriweather({
 	subsets: ["latin"],
@@ -82,7 +83,7 @@ export default function Home() {
 							variants={animate}
 							viewport={{ once: false, amount: 0.1 }}
 						>
-							<Button text="Bergabung" />
+							<Button href="#" text="Bergabung" />
 						</motion.div>
 					</div>
 				</div>
@@ -250,8 +251,8 @@ export default function Home() {
 							</p>
 						</div>
 						<div className="flex flex-col md:flex-row gap-2 md:gap-4 mt-3 pb-14">
-							<Button text="Kontak Kami" />
-							<Button text="Arah Jalan" />
+							<Button href="#" text="Kontak Kami" />
+							<Button href="#" text="Arah Jalan" />
 						</div>
 					</motion.div>
 				</div>
@@ -295,8 +296,8 @@ export default function Home() {
 									A small groups community to help you live within God's grace
 								</p>
 								<div className="flex gap-2.5 flex-col md:flex-row">
-									<Button text="Counseling" />
-									<Button text="Learn More" />
+									<Button href="#" text="Counseling" />
+									<Button href="/discipleship" text="Learn More" />
 								</div>
 							</div>
 						</div>
@@ -332,7 +333,7 @@ export default function Home() {
 									and more
 								</p>
 								<div className="flex flex-col md:flex-row">
-									<Button text="Join our Team" />
+									<Button href="#" text="Join our Team" />
 								</div>
 							</div>
 						</div>

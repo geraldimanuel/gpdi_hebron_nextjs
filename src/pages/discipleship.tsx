@@ -71,7 +71,7 @@ export default function discipleship() {
 						height={0}
 						className="mb-5"
 					/>
-					<Button text="Join Us" />
+					<Button href="#" text="Join Us" />
 				</motion.div>
 			</section>
 			<motion.section
@@ -355,8 +355,8 @@ export default function discipleship() {
 					</div>
 				</div>
 				<div className="flex flex-col md:flex-row md:justify-center gap-3 mt-3 md:mt-10">
-					<Button text="Counseling" />
-					<Button text="Contact Us" />
+					<Button href="#" text="Counseling" />
+					<Button href="#" text="Contact Us" />
 				</div>
 			</motion.section>
 			<motion.section
