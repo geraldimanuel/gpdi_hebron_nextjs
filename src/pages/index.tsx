@@ -19,7 +19,7 @@ export default function Home() {
 		onscreen: {
 			x: 0,
 			opacity: 1,
-			transition: { duration: 1 },
+			transition: { duration: 1.4 },
 		},
 	};
 
@@ -28,7 +28,7 @@ export default function Home() {
 		onscreen: {
 			x: 0,
 			opacity: 1,
-			transition: { delay: 0.2, duration: 1 },
+			transition: { delay: 0.2, duration: 1.4 },
 		},
 	};
 
@@ -37,7 +37,7 @@ export default function Home() {
 		onscreen: {
 			y: 0,
 			opacity: 1,
-			transition: { duration: 1 },
+			transition: { duration: 1.4 },
 		},
 	};
 	return (

@@ -13,7 +13,7 @@ export default function discipleship() {
 		onscreen: {
 			x: 0,
 			opacity: 1,
-			transition: { duration: 1 },
+			transition: { duration: 1.4 },
 		},
 	};
 
