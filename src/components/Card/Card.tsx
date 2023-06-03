@@ -1,8 +1,6 @@
 type Props = {
 	heading: string;
 	text: string;
-	height: string;
-	width: string;
 };
 
 export const Card = ({ heading, text }: Props) => {
