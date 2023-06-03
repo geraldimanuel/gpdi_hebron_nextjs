@@ -35,7 +35,7 @@ export default function Home() {
 			<section id="Section1" className="">
 				<div id="Hero" className="h-[500px] md:min-h-screen relative">
 					<Image
-						src="/Banner.png"
+						src="/Banner.webp"
 						alt="Banner"
 						fill
 						className="relative -z-20 before:bg-black before:absolute before:inset-0 before:z-10 object-cover object-top"
@@ -182,7 +182,12 @@ export default function Home() {
 				</div>
 			</motion.section>
 			<motion.section id="Section5" className="relative -z-20">
-				<Image src="/Banner_2.png" fill className="object-cover -z-10" alt="" />
+				<Image
+					src="/Banner_2.webp"
+					fill
+					className="object-cover -z-10"
+					alt=""
+				/>
 				<motion.div
 					initial={"offscreen"}
 					whileInView={"onscreen"}
@@ -245,7 +250,7 @@ export default function Home() {
 					>
 						<div className="after:absolute after:inset-0 after:bg-[#2052D2] after:rounded-2xl after:mix-blend-multiply">
 							<Image
-								src="/Banner_Home.png"
+								src="/Banner_Home.webp"
 								fill
 								className="object-cover rounded-2xl"
 								alt=""
@@ -253,7 +258,7 @@ export default function Home() {
 						</div>
 						<div className="absolute h-80 flex flex-col md:flex-row items-center md:gap-10 w-full md:p-28 p-6">
 							<div className="drop-shadow-[6px_6px_0px_rgba(210,2,2,1)]">
-								<Image src="/Logo_HOME.png" height={600} width={600} alt="" />
+								<Image src="/Logo_HOME.webp" height={600} width={600} alt="" />
 							</div>
 							<div className="flex flex-col md:gap-11 gap-1">
 								<p className="md:text-2xl text-xl font-semibold tracking-tight text-center md:text-left">
@@ -276,7 +281,7 @@ export default function Home() {
 					>
 						<div className="after:absolute after:inset-0 after:bg-[#952C2C] after:rounded-2xl after:mix-blend-multiply">
 							<Image
-								src="/Banner_SPOT.png"
+								src="/Banner_SPOT.webp"
 								fill
 								className="object-cover rounded-2xl"
 								alt=""
@@ -285,7 +290,7 @@ export default function Home() {
 						<div className="absolute h-80 flex flex-col md:flex-row items-center gap-5 w-full md:p-28 p-6 pt-10">
 							<div>
 								<Image
-									src="/Logo_Spot_Service_Team.png"
+									src="/Logo_Spot_Service_Team.webp"
 									height={750}
 									width={750}
 									alt=""

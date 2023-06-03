@@ -21,7 +21,7 @@ export default function discipleship() {
 			<section className="w-full h-[500px] relative" id="section1">
 				<Navbar />
 				<Image
-					src="/Discipleship_Banner.png"
+					src="/Discipleship_Banner.webp"
 					alt=""
 					fill
 					className="object-cover -z-10"
@@ -34,7 +34,7 @@ export default function discipleship() {
 					className="flex flex-col items-center md:items-start px-10 md:px-0 max-w-xs md:max-w-5xl mx-auto py-32 md:py-28"
 				>
 					<Image
-						src="/Logo_Spot_White.png"
+						src="/Logo_Spot_White.webp"
 						alt=""
 						width={170}
 						height={0}
@@ -42,7 +42,7 @@ export default function discipleship() {
 					/>
 					{/* image home kasih mb-8 ya!*/}
 					<Image
-						src="/Logo_HOME.png"
+						src="/Logo_HOME.webp"
 						alt=""
 						width={300}
 						height={0}
@@ -264,7 +264,7 @@ export default function discipleship() {
 				className="xs:hidden md:relative md:w-full md:h-[600px] md:-z-10"
 			>
 				<Image
-					src="/Discipleship_Banner_2.png"
+					src="/Discipleship_Banner_2.webp"
 					fill
 					alt=""
 					className="object-cover"
