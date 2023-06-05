@@ -53,11 +53,11 @@ export default function Home() {
 						src="/Banner.webp"
 						alt="Banner"
 						fill
-						className="relative -z-20 before:bg-black before:absolute before:inset-0 before:z-10 object-cover object-top"
+						className="min-h-full relative -z-20 before:bg-black before:absolute before:inset-0 before:z-10 object-cover object-top"
 					/>
 					<div
 						id="Hero Text"
-						className="max-w-xs md:max-w-5xl mx-auto min-h-screen flex flex-col md:py-0 py-40 md:px-8 items-center md:items-start md:justify-center gap-6"
+						className="max-w-xs md:max-w-5xl mx-auto min-h-screen flex flex-col md:py-0 py-40 md:px-8 md:items-start md:justify-center gap-6"
 					>
 						<motion.div
 							initial={"offscreen"}
@@ -67,7 +67,7 @@ export default function Home() {
 							className="flex flex-col"
 						>
 							<p className="text-sm md:text-base font-semibold tracking-[5px]">
-								Kami adalah
+								We are
 							</p>
 							<h1 className="text-6xl md:text-8xl font-bold">SPEAKER</h1>
 							<div className="flex flex-row gap-7">
@@ -83,7 +83,10 @@ export default function Home() {
 							variants={animate}
 							viewport={{ once: false, amount: 0.1 }}
 						>
-							<Button href="#" text="Bergabung" />
+							<div className="flex gap-2 md:gap-3">
+								<Button href="#" text="Learn More" />
+								<Button href="#" text="Join Us" />
+							</div>
 						</motion.div>
 					</div>
 				</div>
@@ -93,14 +96,14 @@ export default function Home() {
 				id="Section2"
 				className="max-w-xs md:max-w-5xl mx-auto md:pt-36 md:px-8"
 			>
-				<div className="grid grid-cols-2 grid-flow-col">
+				<div className="md:grid md:grid-cols-2 md:grid-flow-col">
 					<motion.div
 						initial={"offscreen"}
 						whileInView={"onscreen"}
 						transition={{ staggerChildren: 0.5 }}
 						variants={animate}
 						viewport={{ once: false, amount: 0.1 }}
-						className="text-3xl md:text-6xl font-bold"
+						className="text-4xl md:text-6xl font-bold"
 					>
 						<h1>Insert Text.</h1>
 						<h1>In Here.</h1>
@@ -111,7 +114,7 @@ export default function Home() {
 						transition={{ staggerChildren: 0.5 }}
 						variants={animate_staged}
 						viewport={{ once: false, amount: 0.1 }}
-						className="text-base md:text-2xl font-medium max-w-md"
+						className="text-base text-right mt-10 md:mt-0 md:text-left md:text-2xl font-medium max-w-md"
 					>
 						<h1>
 							Kami percaya bahwa hidup akan lebih baik jika dikelilingi oleh
@@ -128,10 +131,10 @@ export default function Home() {
 				variants={animate}
 				viewport={{ once: false, amount: 0.1 }}
 				id="Section3"
-				className="hidden md:block max-w-xs md:max-w-7xl mx-auto md:pt-36 md:px-8"
+				className="md:max-w-7xl pt-16 md:mx-auto md:pt-36 md:px-8"
 			>
 				<div className="relative">
-					<div className="grid grid-cols-3 gap-4 relative -z-10">
+					<div className="grid grid-cols-3 gap-1 md:gap-4 relative -z-10">
 						<div className="bg-red-700 h-72 relative">
 							<Image src="/Stockphoto.webp" alt="Stockphoto" fill />
 						</div>
@@ -156,25 +159,25 @@ export default function Home() {
 						</div>
 					</div>
 
-					<div className="flex w-10/12 absolute bottom-28 z-10 bg-black inset-x-28 p-14 gap-16 font-sans">
+					<div className="md:flex w-80 md:w-10/12 -mt-48 md:mt-0 md:absolute md:bottom-28 z-10 bg-black mx-7 md:inset-x-28 p-7 md:p-14 md:gap-16 font-sans border-4 md:border-none border-black border-b-[#D90505] border-r-[#D90505]">
 						<div>
 							<div>
 								<SpotSVG />
 							</div>
-							<div className="grid mt-7">
-								<span className="text-3xl font-semibold">Speaker of Truth</span>
-								<span className="text-lg font-medium italic">
+							<div className="grid mt-4 md:mt-7">
+								<span className="text-2xl md:text-3xl font-semibold">Speaker of Truth</span>
+								<span className="text-md md:text-lg font-medium italic">
 									Komunitas Pemuda GPdI Hebron Gading Serpong
 								</span>
 							</div>
 						</div>
-						<div className="w-4/5">
-							<p className="font-semibold text-lg">
+						<div className="md:w-4/5 mt-5 md:0">
+							<p className="font-semibold text-md md:text-lg">
 								SPoT adalah lorem ipsum dolor sit amet, consectetur adipiscing
 								elit. Sed vel neque ut sem hendrerit elementum. Nam vel rutrum
 								tortor.
 							</p>
-							<p className="text-lg mt-4">
+							<p className="text-md md:text-lg mt-5">
 								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
 								auctor feugiat porttitor. Ut tincidunt, ligula a convallis
 								vehicula, enim ligula vestibulum metus, sed varius dolor libero
@@ -182,6 +185,9 @@ export default function Home() {
 								euismod quis. Phasellus ultricies iaculis nisi, vel porttitor
 								ipsum placerat nec.
 							</p>
+							<div className="mt-5">
+								<Button href="#" text="Learn More" />
+							</div>
 						</div>
 					</div>
 				</div>
@@ -193,7 +199,7 @@ export default function Home() {
 				variants={animate}
 				viewport={{ once: false, amount: 0.1 }}
 				id="Section4"
-				className="max-w-xs md:max-w-5xl mx-auto text-xl md:text-2xl md:px-8 text-center md:text-left leading-10 py-14  md:py-36"
+				className="w-2/3 md:max-w-5xl mx-auto text-xl md:text-3xl md:px-8 text-left leading-10 py-14 md:py-36"
 			>
 				<div>
 					<span className="text-[#939090]">Kami hadir untuk </span>
@@ -201,11 +207,16 @@ export default function Home() {
 				</div>
 				<div>
 					<span className="text-[#939090]">
-						tidak hanya pada generasi ini, tetapi juga pada{" "}
+						tidak hanya pada{" "} 
+					</span>
+					<span className="text-[#939090]">
+						generasi ini, tetapi juga pada{" "}
 					</span>
 					<span>generasi yang akan datang.</span>
 				</div>
 			</motion.section>
+
+
 			<section id="Section5" className="relative">
 				<Image
 					src="/Banner_2.webp"
@@ -239,7 +250,7 @@ export default function Home() {
 						whileInView={"onscreen"}
 						variants={animate_down}
 						viewport={{ once: false, amount: 0.1 }}
-						className="pt-20 md:pt-96"
+						className="pt-48 md:pt-96"
 					>
 						<p className="text-xl md:text-3xl tracking-tight">
 							Every Saturday,
@@ -250,9 +261,9 @@ export default function Home() {
 								<span className="font-medium tracking-tight">17.00 WIB.</span>
 							</p>
 						</div>
-						<div className="flex flex-col md:flex-row gap-2 md:gap-4 mt-3 pb-14">
+						<div className="flex w-fit md:w-full flex-col md:flex-row gap-2 md:gap-4 mt-3 pb-14">
 							<Button href="#" text="Kontak Kami" />
-							<Button href="#" text="Arah Jalan" />
+							<Button href="#" text="Directions" />
 						</div>
 					</motion.div>
 				</div>
@@ -267,7 +278,7 @@ export default function Home() {
 					whileInView={"onscreen"}
 					variants={animate}
 					viewport={{ once: false, amount: 0.1 }}
-					className="text-4xl text-center md:text-left md:text-5xl"
+					className="text-4xl text-left md:text-5xl"
 				>
 					Our Programs
 				</motion.p>
@@ -292,10 +303,10 @@ export default function Home() {
 								<Image src="/Logo_HOME.webp" height={600} width={600} alt="" />
 							</div>
 							<div className="flex flex-col md:gap-11 gap-1">
-								<p className="md:text-2xl text-xl font-semibold tracking-tight text-center md:text-left">
+								<p className="md:text-2xl w-60 md:w-full text-xl font-semibold tracking-tight text-center md:text-left">
 									A small groups community to help you live within God's grace
 								</p>
-								<div className="flex gap-2.5 flex-col md:flex-row">
+								<div className="flex gap-2.5 flex-row">
 									<Button href="#" text="Counseling" />
 									<Button href="/discipleship" text="Learn More" />
 								</div>
@@ -328,7 +339,7 @@ export default function Home() {
 								/>
 							</div>
 							<div className="flex flex-col md:gap-11 gap-5">
-								<p className="md:text-2xl text-xl font-semibold tracking-tight text-center md:text-left">
+								<p className="md:text-2xl w-60 md:w-full text-xl font-semibold tracking-tight text-center md:text-left">
 									Service Team by SPoT who serves in Praise & Worship ministry,
 									and more
 								</p>
