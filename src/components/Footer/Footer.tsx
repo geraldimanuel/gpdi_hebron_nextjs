@@ -25,7 +25,7 @@ export const Footer = () => {
 						<p>081314467562</p>
 					</div>
 				</div>
-				<div className="flex flex-col text-sm font-medium gap-3">
+				<div className="hidden md:flex flex-col text-sm font-medium gap-3">
 					<p className="font-semibold text-black text-base">Church</p>
 					<p className="text-[#808080]">About Hebron</p>
 					<p className="text-[#808080]">News & Events</p>
@@ -33,18 +33,45 @@ export const Footer = () => {
 					<p className="text-[#808080]">HOME groups</p>
 					<p className="text-[#808080]">Contact Us</p>
 				</div>
-				<div className="flex flex-col text-sm font-medium gap-3">
+				<div className="hidden md:flex flex-col text-sm font-medium gap-3">
 					<p className="font-semibold text-black text-base">Spot</p>
 					<p className="text-[#808080]">About Spot</p>
 					<p className="text-[#808080]">Service Team</p>
 					<p className="text-[#808080]">Counseling</p>
 				</div>
-				<div className="flex flex-col text-sm font-medium gap-3">
+				<div className="hidden md:flex flex-col text-sm font-medium gap-3">
 					<p className="font-semibold text-black text-base">FOCC</p>
 					<p className="font-semibold text-black text-base">DoTS</p>
 					<p className="font-semibold text-black text-base">Hebron Kids</p>
 				</div>
+				<div>
+					<div className="md:hidden flex flex-row gap-20">
+						<div className="flex flex-col text-sm font-medium gap-3">
+							<p className="font-semibold text-black text-base">Church</p>
+							<p className="text-[#808080]">About Hebron</p>
+							<p className="text-[#808080]">News & Events</p>
+							<p className="text-[#808080]">Gallery</p>
+							<p className="text-[#808080]">HOME groups</p>
+							<p className="text-[#808080]">Contact Us</p>
+						</div>
+						<div className="flex flex-col text-sm font-medium gap-3">
+							<p className="font-semibold text-black text-base">FOCC</p>
+							<p className="font-semibold text-black text-base">DoTS</p>
+							<p className="font-semibold text-black text-base">Hebron Kids</p>
+						</div>
+					</div>
+					<div className="md:hidden flex flex-col text-sm font-medium gap-3 mt-8 md:mt-0">
+						<p className="font-semibold text-black text-base">Spot</p>
+						<p className="text-[#808080]">About Spot</p>
+						<p className="text-[#808080]">Service Team</p>
+						<p className="text-[#808080]">Counseling</p>
+					</div>
+				</div>
+
+
 			</div>
+
+
 		</div>
 	);
 };
