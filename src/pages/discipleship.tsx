@@ -43,36 +43,36 @@ export default function discipleship() {
 			</Head>
 			<section className="w-full h-[500px] relative" id="section1">
 				<div className="relative bg-gradient-to-t h-full from-black via-transparent to-transparent">
-				<Navbar />
-				<Image
-					src="/Discipleship_Banner_4.webp"
-					alt=""
-					fill
-					className="h-full object-cover -z-10"
-				/>
-				<motion.div
-					initial={"offscreen"}
-					whileInView={"onscreen"}
-					variants={animate}
-					viewport={{ once: false, amount: 0.3 }}
-					className="flex flex-col items-start md:px-8 max-w-xs md:max-w-5xl mx-auto py-36 md:py-28"
-				>
+					<Navbar />
 					<Image
-						src="/Logo_Spot_White.webp"
+						src="/Discipleship_Banner_4.webp"
 						alt=""
-						width={170}
-						height={0}
-						className="w-2/5 md:w-44 mb-5"
+						fill
+						className="h-full object-cover -z-10"
 					/>
-					<Image
-						src="/Logo_HOME.webp"
-						alt=""
-						width={380}
-						height={0}
-						className="mb-8"
-					/>
-					<Button href="#" text="Join Us" />
-				</motion.div>
+					<motion.div
+						initial={"offscreen"}
+						whileInView={"onscreen"}
+						variants={animate}
+						viewport={{ once: false, amount: 0.3 }}
+						className="flex flex-col items-start md:px-8 max-w-xs md:max-w-5xl mx-auto py-36 md:py-28"
+					>
+						<Image
+							src="/Logo_Spot_White.webp"
+							alt=""
+							width={170}
+							height={0}
+							className="w-2/5 md:w-44 mb-5"
+						/>
+						<Image
+							src="/Logo_HOME.webp"
+							alt=""
+							width={380}
+							height={0}
+							className="mb-8"
+						/>
+						<Button href="#" text="Join Us" />
+					</motion.div>
 				</div>
 			</section>
 			<motion.section
@@ -350,9 +350,9 @@ export default function discipleship() {
 						<p>We're not meant to live life by ourselves.</p>
 					</div>
 					<div>
-					<div className="w-5/6 md:w-full font-medium text-lg md:text-xl md:me-24 mt-3 md:mt-0">
-						<p>Join us and find your small groups now in HOME!</p>
-					</div>
+						<div className="w-5/6 md:w-full font-medium text-lg md:text-xl md:me-24 mt-3 md:mt-0">
+							<p>Join us and find your small groups now in HOME!</p>
+						</div>
 					</div>
 				</div>
 				<div className="flex flex-col md:flex-row items-start md:justify-center gap-3 mt-12 md:mt-10">
@@ -360,11 +360,7 @@ export default function discipleship() {
 					<Button href="#" text="Contact Us" />
 				</div>
 			</motion.section>
-			<motion.section
-				initial={"offscreen"}
-				whileInView={"onscreen"}
-				variants={animate}
-				viewport={{ once: false, amount: 0.3 }}
+			<section
 				id="section7"
 				className="w-full h-[300px] md:h-[600px] block relative -z-10"
 			>
@@ -374,7 +370,7 @@ export default function discipleship() {
 					alt=""
 					className="object-cover"
 				/>
-			</motion.section>
+			</section>
 			<Footer />
 		</>
 	);

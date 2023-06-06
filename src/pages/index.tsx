@@ -136,7 +136,12 @@ export default function Home() {
 				<div className="relative">
 					<div className="grid grid-cols-3 gap-1 md:gap-4 relative -z-10">
 						<div className="bg-red-700 h-72 relative">
-							<Image src="/Stockphoto.webp" alt="Stockphoto" fill />
+							<Image
+								src="/Stockphoto.webp"
+								alt="Stockphoto"
+								fill
+								className="object-cover"
+							/>
 						</div>
 						<div className="bg-red-700 h-72 col-span-2 relative">
 							<Image
@@ -155,7 +160,12 @@ export default function Home() {
 							/>
 						</div>
 						<div className="bg-red-700 h-72 relative">
-							<Image src="/Stockphoto.webp" alt="Stockphoto" fill />
+							<Image
+								src="/Stockphoto.webp"
+								alt="Stockphoto"
+								fill
+								className="object-cover"
+							/>
 						</div>
 					</div>
 
@@ -165,7 +175,9 @@ export default function Home() {
 								<SpotSVG />
 							</div>
 							<div className="grid mt-4 md:mt-7">
-								<span className="text-2xl md:text-3xl font-semibold">Speaker of Truth</span>
+								<span className="text-2xl md:text-3xl font-semibold">
+									Speaker of Truth
+								</span>
 								<span className="text-md md:text-lg font-medium italic">
 									Komunitas Pemuda GPdI Hebron Gading Serpong
 								</span>
@@ -206,16 +218,13 @@ export default function Home() {
 					<span>membuat perbedaan,</span>
 				</div>
 				<div>
-					<span className="text-[#939090]">
-						tidak hanya pada{" "} 
-					</span>
+					<span className="text-[#939090]">tidak hanya pada </span>
 					<span className="text-[#939090]">
 						generasi ini, tetapi juga pada{" "}
 					</span>
 					<span>generasi yang akan datang.</span>
 				</div>
 			</motion.section>
-
 
 			<section id="Section5" className="relative">
 				<Image
