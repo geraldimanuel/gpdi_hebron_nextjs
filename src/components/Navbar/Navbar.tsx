@@ -41,7 +41,7 @@ export const Navbar = () => {
 				<div className="max-w-xs md:max-w-none mx-auto flex md:px-24 mt-28 md:mt-0 md:py-28">
 					<div className="flex flex-col md:flex-row gap-6 md:gap-36 ">
 						<div className="hidden md:flex md:flex-col">
-							<Image src="/Hebron.png" alt="" width={130} height={0}></Image>
+							<Image src="/Hebron.webp" alt="" width={130} height={0}></Image>
 							<p className="text-[#00347E] text-4xl font-semibold mt-4">
 								GPdI Hebron
 							</p>
