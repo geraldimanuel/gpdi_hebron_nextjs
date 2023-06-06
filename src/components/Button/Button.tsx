@@ -8,9 +8,9 @@ type Props = {
 
 export const Button = ({ text, href }: Props) => {
 	return (
-		<button className="rounded-[6px] border-[1px] border-white hover:bg-white hover:text-black ">
+		<button className="rounded-[3px] md:rounded-[6px] border-[1px] border-white hover:bg-white hover:text-black ">
 			<Link href={href}>
-				<p className="text-xl font-semibold my-2 mx-8">{text}</p>
+				<p className="text-sm md:text-xl font-semibold my-2 mx-5 md:mx-8">{text}</p>
 			</Link>
 			
 		</button>

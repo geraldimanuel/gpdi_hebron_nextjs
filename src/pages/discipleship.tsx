@@ -42,37 +42,38 @@ export default function discipleship() {
 				<meta name="description" content="Meta description for the Home page" />
 			</Head>
 			<section className="w-full h-[500px] relative" id="section1">
+				<div className="relative bg-gradient-to-t h-full from-black via-transparent to-transparent">
 				<Navbar />
 				<Image
-					src="/Discipleship_Banner.webp"
+					src="/Discipleship_Banner_4.webp"
 					alt=""
 					fill
-					className="object-cover -z-10"
+					className="h-full object-cover -z-10"
 				/>
 				<motion.div
 					initial={"offscreen"}
 					whileInView={"onscreen"}
 					variants={animate}
 					viewport={{ once: false, amount: 0.3 }}
-					className="flex flex-col items-center md:items-start px-10 md:px-8 max-w-xs md:max-w-5xl mx-auto py-32 md:py-28 "
+					className="flex flex-col items-start md:px-8 max-w-xs md:max-w-5xl mx-auto py-36 md:py-28"
 				>
 					<Image
 						src="/Logo_Spot_White.webp"
 						alt=""
 						width={170}
 						height={0}
-						className="mb-5"
+						className="w-2/5 md:w-44 mb-5"
 					/>
-					{/* image home kasih mb-8 ya!*/}
 					<Image
 						src="/Logo_HOME.webp"
 						alt=""
-						width={300}
+						width={380}
 						height={0}
-						className="mb-5"
+						className="mb-8"
 					/>
 					<Button href="#" text="Join Us" />
 				</motion.div>
+				</div>
 			</section>
 			<motion.section
 				initial={"offscreen"}
@@ -84,7 +85,7 @@ export default function discipleship() {
 			>
 				<div className="text-lg md:text-xl">
 					<p className="font-semibold text-sm  md:text-base">What is HOME?</p>
-					<p className="mt-2">
+					<p className="mt-5">
 						HOME is a small groups community by SPoT, Lorem ipsum dolor sit
 						amet, consectetur
 					</p>
@@ -99,8 +100,8 @@ export default function discipleship() {
 				id="section3"
 				className="max-w-xs md:max-w-5xl mx-auto py-8 md:py-14   md:px-8"
 			>
-				<div className="flex gap-4 items-center">
-					<div className="flex flex-col gap-4 justify-center">
+				<div className="grid grid-cols-2 md:grid-cols-4 gap-4 items-center">
+					<div className="flex flex-col gap-4 mt-8 md:mt-0 justify-center">
 						<motion.span
 							initial={"offscreen"}
 							whileInView={"onscreen"}
@@ -188,7 +189,7 @@ export default function discipleship() {
 							/>
 						</motion.span>
 					</div>
-					<div className="flex flex-col gap-4 justify-center">
+					<div className="flex flex-col gap-4 -mt-16 md:mt-0 justify-center">
 						<motion.span
 							initial={"offscreen"}
 							whileInView={"onscreen"}
@@ -302,7 +303,7 @@ export default function discipleship() {
 			>
 				<div className="text-lg md:text-xl">
 					<p className="font-semibold text-sm md:text-base">What we believe?</p>
-					<p className="mt-2">
+					<p className="mt-5">
 						HOME is a small groups community by SPoT, Lorem ipsum dolor sit
 						amet, consectetur
 					</p>
@@ -344,17 +345,17 @@ export default function discipleship() {
 				className="max-w-xs md:max-w-5xl mx-auto py-14 md:py-28 flex flex-col   md:px-8"
 				id="section6"
 			>
-				<div className="flex flex-col md:flex-row justify-between items-center">
-					<div className="font-semibold text-3xl md:text-4xl">
-						<p>We're not meant to</p>
-						<p>live life by ourselves.</p>
+				<div className="flex flex-col md:gap-44 md:flex-row justify-between items-center">
+					<div className="flex md:basis-8/12 font-semibold text-4xl">
+						<p>We're not meant to live life by ourselves.</p>
 					</div>
-					<div className="font-medium text-lg md:text-xl md:me-24 mt-3 md:mt-0">
-						<p>Join us and find your small groups</p>
-						<p>now in HOME!</p>
+					<div>
+					<div className="w-5/6 md:w-full font-medium text-lg md:text-xl md:me-24 mt-3 md:mt-0">
+						<p>Join us and find your small groups now in HOME!</p>
+					</div>
 					</div>
 				</div>
-				<div className="flex flex-col md:flex-row md:justify-center gap-3 mt-3 md:mt-10">
+				<div className="flex flex-col md:flex-row items-start md:justify-center gap-3 mt-12 md:mt-10">
 					<Button href="#" text="Counseling" />
 					<Button href="#" text="Contact Us" />
 				</div>
@@ -365,10 +366,10 @@ export default function discipleship() {
 				variants={animate}
 				viewport={{ once: false, amount: 0.3 }}
 				id="section7"
-				className="hidden md:block md:relative md:w-full md:h-[600px] md:-z-10"
+				className="w-full h-[300px] md:h-[600px] block relative -z-10"
 			>
 				<Image
-					src="/Discipleship_Banner_2.webp"
+					src="/Discipleship_Banner_3.webp"
 					fill
 					alt=""
 					className="object-cover"
