@@ -135,7 +135,7 @@ export default function Home() {
 			>
 				<div className="relative">
 					<div className="grid grid-cols-3 gap-1 md:gap-4 relative -z-10">
-						<div className="bg-red-700 h-72 relative">
+						<div className="bg-red-700 h-52 md:h-72 relative">
 							<Image
 								src="/Stockphoto.webp"
 								alt="Stockphoto"
@@ -143,7 +143,7 @@ export default function Home() {
 								className="object-cover"
 							/>
 						</div>
-						<div className="bg-red-700 h-72 col-span-2 relative">
+						<div className="bg-red-700 h-52 md:h-72 col-span-2 relative">
 							<Image
 								src="/Stockphoto.webp"
 								alt="Stockphoto"
@@ -151,7 +151,7 @@ export default function Home() {
 								className="object-cover"
 							/>
 						</div>
-						<div className="bg-red-700 h-72 col-span-2 relative">
+						<div className="bg-red-700 h-52 md:h-72 col-span-2 relative">
 							<Image
 								src="/Stockphoto.webp"
 								alt="Stockphoto"
@@ -159,7 +159,7 @@ export default function Home() {
 								className="object-cover"
 							/>
 						</div>
-						<div className="bg-red-700 h-72 relative">
+						<div className="bg-red-700 h-52 md:h-72 relative">
 							<Image
 								src="/Stockphoto.webp"
 								alt="Stockphoto"
@@ -259,7 +259,7 @@ export default function Home() {
 						whileInView={"onscreen"}
 						variants={animate_down}
 						viewport={{ once: false, amount: 0.1 }}
-						className="pt-48 md:pt-96"
+						className="pt-96"
 					>
 						<p className="text-xl md:text-3xl tracking-tight">
 							Every Saturday,
