@@ -169,7 +169,7 @@ export default function Home() {
 						</div>
 					</div>
 
-					<div className="md:flex w-80 md:w-10/12 -mt-48 md:mt-0 md:absolute md:bottom-28 z-10 bg-black mx-7 md:inset-x-28 p-7 md:p-14 md:gap-16 font-sans border-4 md:border-none border-black border-b-[#D90505] border-r-[#D90505]">
+					<div className="flex flex-col md:flex-row w-80 md:w-10/12 -mt-48 md:mt-0 md:absolute md:bottom-28 z-10 bg-black mx-auto md:inset-x-28 p-7 md:p-14 md:gap-16 font-sans border-4 md:border-none border-black border-b-[#D90505] border-r-[#D90505]">
 						<div>
 							<div>
 								<SpotSVG />
