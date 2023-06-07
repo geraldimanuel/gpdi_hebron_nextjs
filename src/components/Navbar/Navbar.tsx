@@ -16,7 +16,7 @@ export const Navbar = () => {
 			className={`${
 				open
 					? "fixed top-0 left-0 right-0 bottom-0 bg-white z-50 transform transition duration-300 ease-in-out"
-					: "fixed top-[40px] left-[40px] flex-row justify-start"
+					: "fixed top-[40px] left-[40px] flex-row justify-start z-50"
 			}`}
 		>
 			<nav
