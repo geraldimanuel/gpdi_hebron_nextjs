@@ -46,7 +46,7 @@ export default function Home() {
         <meta name="description" content="Meta description for the Home page" />
       </Head>
       <section id="Section1" className="">
-        <div id="Hero" className="h-[500px] md:min-h-screen relative">
+        <div id="Hero" className="h-[55vh] md:min-h-screen relative">
           <Image
             src="/Banner.webp"
             alt="Banner"
@@ -115,9 +115,9 @@ export default function Home() {
             className="text-base text-right mt-10 md:mt-0 md:text-left md:text-2xl font-medium max-w-md"
           >
             <h1>
-              Kami percaya bahwa hidup akan lebih baik jika dikelilingi oleh
-              orang-orang yang mendorong, mendukung, dan menantang kamu untuk
-              bertumbuh dalam hubungan dengan Kristus.
+              We believe that life is better when surrounded by
+              people who encourage, support, and challenge you to
+              grow in your relationship with Christ.
             </h1>
           </motion.div>
         </div>
@@ -195,17 +195,18 @@ export default function Home() {
             </div>
             <div className="">
               <p className="font-semibold leading-7">
-                SPoT adalah lorem ipsum dolor sit amet, consectetur adipiscing
-                elit. Sed vel neque ut sem hendrerit elementum. Nam vel rutrum
-                tortor.
+                SPoT, which stands for Speakers of Truth, is a dynamic
+                Christian youth community from GPdI Hebron Gading Serpong;
+                committed to spreading the truth and power of the Holy Spirit
+                in the Gading Serpong area. 
               </p>
               <p className="mt-2 text-md leading-7">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-                auctor feugiat porttitor. Ut tincidunt, ligula a convallis
-                vehicula, enim ligula vestibulum metus, sed varius dolor libero
-                mollis lacus. In accumsan ante mauris, vitae ultricies odio
-                euismod quis. Phasellus ultricies iaculis nisi, vel porttitor
-                ipsum placerat nec.
+                Through our services, events, and genuine connections,
+                we inspire and empower young individuals to live out
+                their faith authentically and make a positive impact
+                in their community. SPoT is more than just a community;
+                it's a catalyst for spiritual transformation and a beacon
+                of truth in Gading Serpong.
               </p>
               <div className="mt-5">
                 <Button href="#" text="Learn More" />
@@ -224,13 +225,13 @@ export default function Home() {
         className="max-w-xs md:max-w-5xl mx-auto text-xl md:text-3xl md:px-8 text-left leading-10 py-14 md:py-36"
       >
         <div>
-          <span className="text-white/75">Kami hadir untuk </span>
-          <span>membuat perbedaan,</span>
+          <span className="text-white/50">We are here </span>
+          <span>to make a difference,</span>
         </div>
         <div>
-          <span className="text-white/75">tidak hanya pada </span>
-          <span className="text-white/75">generasi ini, tetapi juga pada </span>
-          <span>generasi yang akan datang.</span>
+          <span className="text-white/50">not only for </span>
+          <span className="text-white/50">this generation, but also </span>
+          <span>for the generations to come.</span>
         </div>
       </motion.section>
 
@@ -281,7 +282,7 @@ export default function Home() {
               </p>
             </div>
             <div className="flex w-fit md:w-full flex-wrap gap-2 md:gap-4 mt-3 pb-14">
-              <Button href="#" text="Kontak Kami" />
+              <Button href="#" text="Contact Us" />
               <Button href="#" text="Directions" />
             </div>
           </motion.div>
@@ -297,7 +298,7 @@ export default function Home() {
           whileInView={"onscreen"}
           variants={animate}
           viewport={{ once: false, amount: 0.1 }}
-          className="text-4xl text-left md:text-5xl"
+          className="text-4xl text-left md:text-5xl mt-12 mb-6"
         >
           Our Programs
         </motion.p>
