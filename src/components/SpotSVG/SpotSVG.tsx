@@ -1,7 +1,6 @@
 export const SpotSVG = () => {
 	return (
 		<svg
-			className="w-36 md:w-72"
 			viewBox="0 0 398 165"
 			fill="none"
 			xmlns="http://www.w3.org/2000/svg"
