@@ -1,5 +1,9 @@
 /* eslint-disable no-tabs */
 /* eslint-disable indent */
+
+// REVIEW: INI ESLINT KENAPA BANYAK BET WOE
+// TODO: perbaiki eslintnya
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
 	reactStrictMode: true,

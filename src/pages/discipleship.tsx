@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import { Navbar } from "@/components/Navbar/Navbar";
 import { Button } from "@/components/Button/Button";
 import { Footer } from "@/components/Footer/Footer";
 import { Card } from "@/components/Card/Card";
@@ -17,7 +16,6 @@ export default function discipleship() {
 			</Head>
 			<section className="w-full h-[500px] relative" id="section1">
 				<div className="relative bg-gradient-to-t h-full from-black via-transparent to-transparent">
-					<Navbar />
 					<Image
 						src="/Discipleship_Banner_4.webp"
 						alt=""

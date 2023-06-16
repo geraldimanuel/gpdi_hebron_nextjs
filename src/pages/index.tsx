@@ -61,7 +61,6 @@ export default function Home() {
             </motion.div>
           </div>
         </div>
-        <Navbar />
       </section>
       <section
         id="Section2"
