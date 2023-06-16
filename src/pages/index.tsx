@@ -3,6 +3,7 @@ import { Merriweather } from "next/font/google";
 import { Navbar, Button, SpotSVG, Footer, ProgramCard } from "@/components";
 import { motion } from "framer-motion";
 import Head from "next/head";
+import { animate, animate_down, animate_staged } from "@/lib/FramerAnimation";
 
 const merri = Merriweather({
   subsets: ["latin"],
@@ -11,34 +12,6 @@ const merri = Merriweather({
 });
 
 export default function Home() {
-  // TODO: bikin animasinya di file terpisah
-  const animate = {
-    offscreen: { x: -100, opacity: 0 },
-    onscreen: {
-      x: 0,
-      opacity: 1,
-      transition: { duration: 1.4 },
-    },
-  };
-
-  const animate_staged = {
-    offscreen: { x: -100, opacity: 0 },
-    onscreen: {
-      x: 0,
-      opacity: 1,
-      transition: { delay: 0.2, duration: 1.4 },
-    },
-  };
-
-  const animate_down = {
-    offscreen: { y: -100, opacity: 0 },
-    onscreen: {
-      y: 0,
-      opacity: 1,
-      transition: { duration: 1.4 },
-    },
-  };
-
   return (
     <>
       <Head>
