@@ -7,8 +7,14 @@ import { Card } from "@/components/Card/Card";
 import { motion } from "framer-motion";
 import Head from "next/head";
 import { animate, animate_down2, animate_down_up } from "@/lib/FramerAnimation";
+import axios from "@/lib/Axios";
+import Link from "next/link";
 
-export default function discipleship() {
+interface DiscipleshipProps {
+	articles: any[];
+}
+
+const discipleship = ({ articles }: DiscipleshipProps) => {
 	return (
 		<>
 			<Head>
@@ -297,7 +303,7 @@ export default function discipleship() {
 				id="section5"
 				className="max-w-xs md:max-w-5xl mx-auto flex flex-col md:flex-row gap-4 md:justify-between py-3 md:py-0 -z-20   md:px-8"
 			>
-				<Card
+				{/* <Card
 					heading="Heading"
 					text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel convallis lacus. Nam at ultrices nulla. Nam sed hendrerit magna, vel finibus nulla."
 				/>
@@ -308,7 +314,15 @@ export default function discipleship() {
 				<Card
 					heading="Heading"
 					text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel convallis lacus. Nam at ultrices nulla. Nam sed hendrerit magna, vel finibus nulla."
-				/>
+				/> */}
+
+				{articles.map((article) => (
+					<Card
+						key={article.id}
+						heading={article.attributes.title}
+						text={article.attributes.text}
+					/>
+				))}
 			</motion.section>
 
 			<motion.section
@@ -348,4 +362,17 @@ export default function discipleship() {
 			<Footer />
 		</>
 	);
+};
+
+export default discipleship;
+
+export async function getStaticProps() {
+	const response = await axios.get("/api/v1/articles");
+	const articles = response.data.data;
+
+	return {
+		props: {
+			articles,
+		},
+	};
 }
