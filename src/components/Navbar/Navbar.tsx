@@ -87,7 +87,7 @@ export const Navbar = () => {
                 About SPoT
               </Link>
               <Link href="/discipleship" className=" text-base font-medium">
-                Counseling
+              HOME Discipleship
               </Link>
             </div>
           </div>

@@ -38,7 +38,7 @@ export const Footer = () => {
 					<p className="font-semibold text-black text-base">Spot</p>
 					<Link href="/" className="text-[#808080]">About Spot</Link>
 					{/* <Link href="" className="text-[#808080]">Service Team</Link> */}
-					<Link href="/discipleship" className="text-[#808080]">Counseling</Link>
+					<Link href="/discipleship" className="text-[#808080]">HOME Discipleship</Link>
 				</div>
 				<div className="hidden md:flex flex-col text-sm font-medium gap-3">
 					<p className="font-semibold text-black text-base">FOCC</p>
@@ -65,7 +65,7 @@ export const Footer = () => {
 						<p className="font-semibold text-black text-base">Spot</p>
 						<Link href="/" className="text-[#808080]">About Spot</Link>
 						{/* <Link href="" className="text-[#808080]">Service Team</Link> */}
-						<Link href="/discipleship" className="text-[#808080]">Counseling</Link>
+						<Link href="/discipleship" className="text-[#808080]">HOME Discipleship</Link>
 					</div>
 				</div>
 
