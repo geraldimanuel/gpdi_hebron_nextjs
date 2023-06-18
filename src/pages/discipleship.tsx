@@ -1,40 +1,13 @@
 import React from "react";
 import Image from "next/image";
-import { Navbar } from "@/components/Navbar/Navbar";
 import { Button } from "@/components/Button/Button";
 import { Footer } from "@/components/Footer/Footer";
 import { Card } from "@/components/Card/Card";
 import { motion } from "framer-motion";
 import Head from "next/head";
+import { animate, animate_down2, animate_down_up } from "@/lib/FramerAnimation";
 
 export default function discipleship() {
-	const animate = {
-		offscreen: { x: -100, opacity: 0 },
-		onscreen: {
-			x: 0,
-			opacity: 1,
-			transition: { duration: 1.4 },
-		},
-	};
-
-	const animate_down = {
-		offscreen: { y: -100, opacity: 0 },
-		onscreen: {
-			y: 0,
-			opacity: 1,
-			transition: { duration: 0.5, delay: 0.3 },
-		},
-	};
-
-	const animate_down_up = {
-		offscreen: { y: -100, opacity: 0 },
-		onscreen: {
-			y: 0,
-			opacity: 1,
-			transition: { duration: 0.5 },
-		},
-	};
-
 	return (
 		<>
 			<Head>
@@ -43,7 +16,6 @@ export default function discipleship() {
 			</Head>
 			<section className="w-full h-[500px] relative" id="section1">
 				<div className="relative bg-gradient-to-t h-full from-black via-transparent to-transparent">
-					<Navbar />
 					<Image
 						src="/Discipleship_Banner_4.webp"
 						alt=""
@@ -105,7 +77,7 @@ export default function discipleship() {
 						<motion.span
 							initial={"offscreen"}
 							whileInView={"onscreen"}
-							variants={animate_down}
+							variants={animate_down2}
 							viewport={{ once: false, amount: 0.1 }}
 						>
 							<Image
@@ -119,7 +91,7 @@ export default function discipleship() {
 						<motion.span
 							initial={"offscreen"}
 							whileInView={"onscreen"}
-							variants={animate_down}
+							variants={animate_down2}
 							viewport={{ once: false, amount: 0.1 }}
 						>
 							<Image
@@ -133,7 +105,7 @@ export default function discipleship() {
 						<motion.span
 							initial={"offscreen"}
 							whileInView={"onscreen"}
-							variants={animate_down}
+							variants={animate_down2}
 							viewport={{ once: false, amount: 0.1 }}
 						>
 							<Image
@@ -193,7 +165,7 @@ export default function discipleship() {
 						<motion.span
 							initial={"offscreen"}
 							whileInView={"onscreen"}
-							variants={animate_down}
+							variants={animate_down2}
 							viewport={{ once: false, amount: 0.1 }}
 						>
 							<Image
@@ -207,7 +179,7 @@ export default function discipleship() {
 						<motion.span
 							initial={"offscreen"}
 							whileInView={"onscreen"}
-							variants={animate_down}
+							variants={animate_down2}
 							viewport={{ once: false, amount: 0.1 }}
 						>
 							<Image
@@ -221,7 +193,7 @@ export default function discipleship() {
 						<motion.span
 							initial={"offscreen"}
 							whileInView={"onscreen"}
-							variants={animate_down}
+							variants={animate_down2}
 							viewport={{ once: false, amount: 0.1 }}
 						>
 							<Image
