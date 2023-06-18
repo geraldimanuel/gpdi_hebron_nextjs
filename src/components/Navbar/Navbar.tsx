@@ -24,7 +24,7 @@ export const Navbar = () => {
   
   return (
     <div
-    className={`fixed h-screen inset-x-0 z-50 ${open ? "overflow-auto" : "overflow-hidden"}`}
+    className={`fixed inset-x-0 h-screen z-50 ${open ? "overflow-auto" : "pointer-events-none overflow-hidden"}`}
       // className={`fixed flex top-0 inset-x-0 md:top-6 md:inset-x-6 ${
       //   open
       //     ? "z-50 rounded-xl"
@@ -32,7 +32,7 @@ export const Navbar = () => {
       // }`}
     >
       <nav
-        className={`rounded-lg flex flex-0 flex-row items-center cursor-pointer h-12 fixed top-4 left-4 transition-all text-hebron-blue z-50 duration-300 ${
+        className={`pointer-events-auto rounded-lg min-w-[50px] flex flex-0 flex-row items-center cursor-pointer h-12 fixed top-4 left-4 transition-all text-hebron-blue z-50 duration-300 ${
           open
             ? "bg-hebron-blue justify-center"
             : "bg-white px-3 gap-3 "
@@ -62,20 +62,20 @@ export const Navbar = () => {
           </div>
           {/* TODO: keknya lebih elegan kalo bikin menunya di JSON trus tinggal looping doang disini? */}
           <div>
-            <Link href="#" className=" text-4xl font-semibold">
+            <Link href="https://gpdi-hebron.com/" className=" text-4xl font-semibold">
               Beranda
             </Link>
             <div className="mt-4 flex flex-col gap-2">
-              <Link href="#" className="text-base font-medium">
+              <Link href="https://gpdi-hebron.com/about" className="text-base font-medium">
                 Tentang Kami
               </Link>
-              <Link href="#" className=" text-base font-medium">
+              <Link href="https://gpdi-hebron.com/news" className=" text-base font-medium">
                 Berita dan Artikel
               </Link>
-              <Link href="#" className=" text-base font-medium">
+              <Link href="https://gpdi-hebron.com/agenda" className=" text-base font-medium">
                 Agenda Kegiatan
               </Link>
-              <Link href="#" className=" text-base font-medium">
+              <Link href="https://gpdi-hebron.com/kontak" className=" text-base font-medium">
                 Kontak Kami
               </Link>
             </div>
@@ -92,13 +92,13 @@ export const Navbar = () => {
             </div>
           </div>
           <div className="flex flex-col gap-6 md:gap-12 md:ps-14	">
-            <Link href="#" className=" text-4xl font-semibold">
+            <Link href="https://gpdi-hebron.com/agenda/descendants-of-truths-teens/26" className=" text-4xl font-semibold">
               DOTS
             </Link>
-            <Link href="#" className=" text-4xl font-semibold">
+            <Link href="https://gpdi-hebron.com/agenda/umum/22" className=" text-4xl font-semibold">
               FOCC
             </Link>
-            <Link href="#" className=" text-4xl font-semibold">
+            <Link href="https://gpdi-hebron.com/agenda/hebron-kids/23" className=" text-4xl font-semibold">
               Hebron Kids
             </Link>
           </div>
