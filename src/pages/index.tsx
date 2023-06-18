@@ -55,8 +55,8 @@ export default function Home() {
               viewport={{ once: false, amount: 0.1 }}
             >
               <div className="flex gap-2 md:gap-3">
-                <Button href="#" text="Learn More" />
-                <Button href="#" text="Join Us" />
+                {/* <Button href="https://www.instagram.com/spot_gen/" text="Learn More" /> */}
+                <Button href="https://www.instagram.com/spot_gen/" text="Join Us" />
               </div>
             </motion.div>
           </div>
@@ -181,7 +181,7 @@ export default function Home() {
                 of truth in Gading Serpong.
               </p>
               <div className="mt-5">
-                <Button href="#" text="Learn More" />
+                <Button href="https://www.instagram.com/spot_gen/" text="Learn More" />
               </div>
             </div>
           </div>
@@ -254,8 +254,8 @@ export default function Home() {
               </p>
             </div>
             <div className="flex w-fit md:w-full flex-wrap gap-2 md:gap-4 mt-3 pb-14">
-              <Button href="#" text="Contact Us" />
-              <Button href="#" text="Directions" />
+              <Button href="https://wa.me/+6281387243736" text="Contact Us" />
+              <Button href="https://goo.gl/maps/x32zhLbgF53JSbj29" text="Directions" />
             </div>
           </motion.div>
         </div>
