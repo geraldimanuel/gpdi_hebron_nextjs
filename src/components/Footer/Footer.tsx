@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export const Footer = () => {
 	return (
@@ -27,17 +28,17 @@ export const Footer = () => {
 				</div>
 				<div className="hidden md:flex flex-col text-sm font-medium gap-3">
 					<p className="font-semibold text-black text-base">Church</p>
-					<p className="text-[#808080]">About Hebron</p>
-					<p className="text-[#808080]">News & Events</p>
-					<p className="text-[#808080]">Gallery</p>
-					<p className="text-[#808080]">HOME groups</p>
-					<p className="text-[#808080]">Contact Us</p>
+					<Link href="https://gpdi-hebron.com/about" className="text-[#808080]">About Hebron</Link>
+					<Link href="https://gpdi-hebron.com/news" className="text-[#808080]">News & Events</Link>
+					<Link href="https://drive.google.com/open?id=1Y5ywBS7VoIO7mk_qc2X6nz7z18Bi_PHw&pli=1&authuser=0" className="text-[#808080]">Gallery</Link>
+					{/* <Link href="" className="text-[#808080]">HOME groups</Link> */}
+					<Link href="https://gpdi-hebron.com/kontak" className="text-[#808080]">Contact Us</Link>
 				</div>
 				<div className="hidden md:flex flex-col text-sm font-medium gap-3">
 					<p className="font-semibold text-black text-base">Spot</p>
-					<p className="text-[#808080]">About Spot</p>
-					<p className="text-[#808080]">Service Team</p>
-					<p className="text-[#808080]">Counseling</p>
+					<Link href="/" className="text-[#808080]">About Spot</Link>
+					{/* <Link href="" className="text-[#808080]">Service Team</Link> */}
+					<Link href="/discipleship" className="text-[#808080]">Counseling</Link>
 				</div>
 				<div className="hidden md:flex flex-col text-sm font-medium gap-3">
 					<p className="font-semibold text-black text-base">FOCC</p>
@@ -48,11 +49,11 @@ export const Footer = () => {
 					<div className="md:hidden flex flex-row gap-20">
 						<div className="flex flex-col text-sm font-medium gap-3">
 							<p className="font-semibold text-black text-base">Church</p>
-							<p className="text-[#808080]">About Hebron</p>
-							<p className="text-[#808080]">News & Events</p>
-							<p className="text-[#808080]">Gallery</p>
-							<p className="text-[#808080]">HOME groups</p>
-							<p className="text-[#808080]">Contact Us</p>
+							<Link href="https://gpdi-hebron.com/about" className="text-[#808080]">About Hebron</Link>
+							<Link href="https://gpdi-hebron.com/news" className="text-[#808080]">News & Events</Link>
+							<Link href="https://drive.google.com/open?id=1Y5ywBS7VoIO7mk_qc2X6nz7z18Bi_PHw&pli=1&authuser=0" className="text-[#808080]">Gallery</Link>
+							{/* <Link href="" className="text-[#808080]">HOME groups</Link> */}
+							<Link href="https://gpdi-hebron.com/kontak" className="text-[#808080]">Contact Us</Link>
 						</div>
 						<div className="flex flex-col text-sm font-medium gap-3">
 							<p className="font-semibold text-black text-base">FOCC</p>
@@ -62,9 +63,9 @@ export const Footer = () => {
 					</div>
 					<div className="md:hidden flex flex-col text-sm font-medium gap-3 mt-8 md:mt-0">
 						<p className="font-semibold text-black text-base">Spot</p>
-						<p className="text-[#808080]">About Spot</p>
-						<p className="text-[#808080]">Service Team</p>
-						<p className="text-[#808080]">Counseling</p>
+						<Link href="/" className="text-[#808080]">About Spot</Link>
+						{/* <Link href="" className="text-[#808080]">Service Team</Link> */}
+						<Link href="/discipleship" className="text-[#808080]">Counseling</Link>
 					</div>
 				</div>
 

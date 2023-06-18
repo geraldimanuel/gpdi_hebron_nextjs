@@ -63,20 +63,20 @@ export const Navbar = () => {
           {/* TODO: keknya lebih elegan kalo bikin menunya di JSON trus tinggal looping doang disini? */}
           <div>
             <Link href="https://gpdi-hebron.com/" className=" text-4xl font-semibold">
-              Beranda
+              Church
             </Link>
             <div className="mt-4 flex flex-col gap-2">
               <Link href="https://gpdi-hebron.com/about" className="text-base font-medium">
-                Tentang Kami
+                About Hebron
               </Link>
               <Link href="https://gpdi-hebron.com/news" className=" text-base font-medium">
-                Berita dan Artikel
+                News & Events
               </Link>
               <Link href="https://gpdi-hebron.com/agenda" className=" text-base font-medium">
-                Agenda Kegiatan
+                Agenda
               </Link>
               <Link href="https://gpdi-hebron.com/kontak" className=" text-base font-medium">
-                Kontak Kami
+                Contact Us
               </Link>
             </div>
             <div className="mt-8 flex flex-col gap-2">
@@ -84,10 +84,10 @@ export const Navbar = () => {
                 SPoT
               </Link>
               <Link href="/" className=" text-base font-medium">
-                Tentang SPoT
+                About SPoT
               </Link>
               <Link href="/discipleship" className=" text-base font-medium">
-                Komsel HoME
+                Counseling
               </Link>
             </div>
           </div>
