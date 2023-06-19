@@ -70,7 +70,7 @@ export default function discipleship() {
 			</motion.section>
 			<section
 				id="section3"
-				className="max-w-xs md:max-w-5xl mx-auto py-8 md:py-14   md:px-8"
+				className="max-w-xs md:max-w-5xl mx-auto py-8 md:py-14 md:px-8"
 			>
 				<div className="grid grid-cols-2 md:grid-cols-4 gap-4 items-center">
 					<div className="flex flex-col gap-4 mt-8 md:mt-0 justify-center">
@@ -78,7 +78,7 @@ export default function discipleship() {
 							initial={"offscreen"}
 							whileInView={"onscreen"}
 							variants={animate_down2}
-							viewport={{ once: false, amount: 0.1 }}
+							viewport={{ once: false, margin: "100px", amount: 0.1 }}
 						>
 							<Image
 								src="/group_image/1.png"
@@ -92,7 +92,7 @@ export default function discipleship() {
 							initial={"offscreen"}
 							whileInView={"onscreen"}
 							variants={animate_down2}
-							viewport={{ once: false, amount: 0.1 }}
+							viewport={{ once: false, margin: "100px", amount: 0.1 }}
 						>
 							<Image
 								src="/group_image/2.png"
@@ -106,7 +106,7 @@ export default function discipleship() {
 							initial={"offscreen"}
 							whileInView={"onscreen"}
 							variants={animate_down2}
-							viewport={{ once: false, amount: 0.1 }}
+							viewport={{ once: false, margin: "100px", amount: 0.1 }}
 						>
 							<Image
 								src="/group_image/3.png"
@@ -122,7 +122,7 @@ export default function discipleship() {
 							initial={"offscreen"}
 							whileInView={"onscreen"}
 							variants={animate_down_up}
-							viewport={{ once: false, amount: 0.1 }}
+							viewport={{ once: false, margin: "100px", amount: 0.1 }}
 						>
 							<Image
 								src="/group_image/4.png"
@@ -136,7 +136,7 @@ export default function discipleship() {
 							initial={"offscreen"}
 							whileInView={"onscreen"}
 							variants={animate_down_up}
-							viewport={{ once: false, amount: 0.1 }}
+							viewport={{ once: false, margin: "100px", amount: 0.1 }}
 						>
 							<Image
 								src="/group_image/5.png"
@@ -150,7 +150,7 @@ export default function discipleship() {
 							initial={"offscreen"}
 							whileInView={"onscreen"}
 							variants={animate_down_up}
-							viewport={{ once: false, amount: 0.1 }}
+							viewport={{ once: false, margin: "100px", amount: 0.1 }}
 						>
 							<Image
 								src="/group_image/6.png"
@@ -166,7 +166,7 @@ export default function discipleship() {
 							initial={"offscreen"}
 							whileInView={"onscreen"}
 							variants={animate_down2}
-							viewport={{ once: false, amount: 0.1 }}
+							viewport={{ once: false, margin: "100px", amount: 0.1 }}
 						>
 							<Image
 								src="/group_image/7.png"
@@ -180,7 +180,7 @@ export default function discipleship() {
 							initial={"offscreen"}
 							whileInView={"onscreen"}
 							variants={animate_down2}
-							viewport={{ once: false, amount: 0.1 }}
+							viewport={{ once: false, margin: "100px", amount: 0.1 }}
 						>
 							<Image
 								src="/group_image/8.png"
@@ -194,7 +194,7 @@ export default function discipleship() {
 							initial={"offscreen"}
 							whileInView={"onscreen"}
 							variants={animate_down2}
-							viewport={{ once: false, amount: 0.1 }}
+							viewport={{ once: false, margin: "100px", amount: 0.1 }}
 						>
 							<Image
 								src="/group_image/9.png"
@@ -210,7 +210,7 @@ export default function discipleship() {
 							initial={"offscreen"}
 							whileInView={"onscreen"}
 							variants={animate_down_up}
-							viewport={{ once: false, amount: 0.1 }}
+							viewport={{ once: false, margin: "100px", amount: 0.1 }}
 						>
 							<Image
 								src="/group_image/10.png"
@@ -224,7 +224,7 @@ export default function discipleship() {
 							initial={"offscreen"}
 							whileInView={"onscreen"}
 							variants={animate_down_up}
-							viewport={{ once: false, amount: 0.1 }}
+							viewport={{ once: false, margin: "100px", amount: 0.1 }}
 						>
 							<Image
 								src="/group_image/11.png"
@@ -238,7 +238,7 @@ export default function discipleship() {
 							initial={"offscreen"}
 							whileInView={"onscreen"}
 							variants={animate_down_up}
-							viewport={{ once: false, amount: 0.1 }}
+							viewport={{ once: false, margin: "100px", amount: 0.1 }}
 						>
 							<Image
 								src="/group_image/12.png"
@@ -252,7 +252,7 @@ export default function discipleship() {
 							initial={"offscreen"}
 							whileInView={"onscreen"}
 							variants={animate_down_up}
-							viewport={{ once: false, amount: 0.1 }}
+							viewport={{ once: false, margin: "100px", amount: 0.1 }}
 						>
 							<Image
 								src="/group_image/13.png"
