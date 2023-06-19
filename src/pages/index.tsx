@@ -19,7 +19,7 @@ export default function Home() {
         <meta name="description" content="Meta description for the Home page" />
       </Head>
       <section id="Section1" className="">
-        <div id="Hero" className="h-[55vh] md:min-h-screen relative">
+        <div id="Hero" className="h-[60vh] md:min-h-screen relative">
           <Image
             src="/Banner.webp"
             alt="Banner"

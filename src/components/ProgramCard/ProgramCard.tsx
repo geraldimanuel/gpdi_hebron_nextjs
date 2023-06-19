@@ -27,7 +27,7 @@ export function ProgramCard({
         `}
         style={{ backgroundImage: `url(${background})` }}
         >
-            <div className="relative flex flex-col md:flex-row w-full gap-8 z-10">
+            <div className="relative grid md:grid-cols-2 auto-rows-min w-full gap-8 z-10">
               <div className="drop-shadow-[6px_6px_0px_rgba(210,2,2,1)] object-contain w-full h-32">
                 <Image src={logo} fill alt="" className="object-contain"/>
               </div>
