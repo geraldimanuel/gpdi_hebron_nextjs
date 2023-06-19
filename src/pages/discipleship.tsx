@@ -43,7 +43,7 @@ export default function discipleship() {
 							height={0}
 							className="mb-8"
 						/>
-						<Button href="#" text="Join Us" />
+						<Button href="https://www.instagram.com/spot_gen" text="Join Us" />
 					</motion.div>
 				</div>
 			</section>
@@ -58,19 +58,18 @@ export default function discipleship() {
 				<div className="text-lg md:text-xl">
 					<p className="font-semibold text-sm  md:text-base">What is HOME?</p>
 					<p className="mt-5">
-						HOME is a small groups community by SPoT, Lorem ipsum dolor sit
-						amet, consectetur
+						HOME is where Sahabat Jiwa conducts anointing and discipleship,
+						teaching individuals to follow all of Christ's commandments.
+						It is a space dedicated to nurturing and empowering souls, guiding
+						them on their spiritual journey. Within the HOME discipleship,
+						Sahabat Jiwa creates a community where individuals find support,
+						understanding, and the opportunity to grow in their faith.
 					</p>
-					<p>
-						adipiscing elit. Duis auctor feugiat porttitor. Ut tincidunt, ligula
-						a convallis vehicula, enim ligula
-					</p>
-					<p>vestibulum metus, sed varius dolor libero mollis lacus.</p>
 				</div>
 			</motion.section>
 			<section
 				id="section3"
-				className="max-w-xs md:max-w-5xl mx-auto py-8 md:py-14   md:px-8"
+				className="max-w-xs md:max-w-5xl mx-auto py-8 md:py-14 md:px-8"
 			>
 				<div className="grid grid-cols-2 md:grid-cols-4 gap-4 items-center">
 					<div className="flex flex-col gap-4 mt-8 md:mt-0 justify-center">
@@ -78,10 +77,10 @@ export default function discipleship() {
 							initial={"offscreen"}
 							whileInView={"onscreen"}
 							variants={animate_down2}
-							viewport={{ once: false, amount: 0.1 }}
+							viewport={{ once: false, margin: "100px", amount: 0.1 }}
 						>
 							<Image
-								src="/group_image/1.png"
+								src="/group_image/1.jpg"
 								alt="Stockphoto"
 								width={250}
 								height={0}
@@ -92,10 +91,10 @@ export default function discipleship() {
 							initial={"offscreen"}
 							whileInView={"onscreen"}
 							variants={animate_down2}
-							viewport={{ once: false, amount: 0.1 }}
+							viewport={{ once: false, margin: "100px", amount: 0.1 }}
 						>
 							<Image
-								src="/group_image/2.png"
+								src="/group_image/2.jpg"
 								alt="Stockphoto"
 								width={250}
 								height={0}
@@ -106,10 +105,10 @@ export default function discipleship() {
 							initial={"offscreen"}
 							whileInView={"onscreen"}
 							variants={animate_down2}
-							viewport={{ once: false, amount: 0.1 }}
+							viewport={{ once: false, margin: "100px", amount: 0.1 }}
 						>
 							<Image
-								src="/group_image/3.png"
+								src="/group_image/3.jpg"
 								alt="Stockphoto"
 								width={250}
 								height={0}
@@ -122,10 +121,10 @@ export default function discipleship() {
 							initial={"offscreen"}
 							whileInView={"onscreen"}
 							variants={animate_down_up}
-							viewport={{ once: false, amount: 0.1 }}
+							viewport={{ once: false, margin: "100px", amount: 0.1 }}
 						>
 							<Image
-								src="/group_image/4.png"
+								src="/group_image/4.jpg"
 								alt="Stockphoto"
 								width={250}
 								height={0}
@@ -136,10 +135,10 @@ export default function discipleship() {
 							initial={"offscreen"}
 							whileInView={"onscreen"}
 							variants={animate_down_up}
-							viewport={{ once: false, amount: 0.1 }}
+							viewport={{ once: false, margin: "100px", amount: 0.1 }}
 						>
 							<Image
-								src="/group_image/5.png"
+								src="/group_image/5.jpg"
 								alt="Stockphoto"
 								width={250}
 								height={0}
@@ -150,10 +149,10 @@ export default function discipleship() {
 							initial={"offscreen"}
 							whileInView={"onscreen"}
 							variants={animate_down_up}
-							viewport={{ once: false, amount: 0.1 }}
+							viewport={{ once: false, margin: "100px", amount: 0.1 }}
 						>
 							<Image
-								src="/group_image/6.png"
+								src="/group_image/6.jpg"
 								alt="Stockphoto"
 								width={250}
 								height={0}
@@ -166,10 +165,10 @@ export default function discipleship() {
 							initial={"offscreen"}
 							whileInView={"onscreen"}
 							variants={animate_down2}
-							viewport={{ once: false, amount: 0.1 }}
+							viewport={{ once: false, margin: "100px", amount: 0.1 }}
 						>
 							<Image
-								src="/group_image/7.png"
+								src="/group_image/7.jpg"
 								alt="Stockphoto"
 								width={250}
 								height={0}
@@ -180,10 +179,10 @@ export default function discipleship() {
 							initial={"offscreen"}
 							whileInView={"onscreen"}
 							variants={animate_down2}
-							viewport={{ once: false, amount: 0.1 }}
+							viewport={{ once: false, margin: "100px", amount: 0.1 }}
 						>
 							<Image
-								src="/group_image/8.png"
+								src="/group_image/8.jpg"
 								alt="Stockphoto"
 								width={250}
 								height={0}
@@ -194,10 +193,10 @@ export default function discipleship() {
 							initial={"offscreen"}
 							whileInView={"onscreen"}
 							variants={animate_down2}
-							viewport={{ once: false, amount: 0.1 }}
+							viewport={{ once: false, margin: "100px", amount: 0.1 }}
 						>
 							<Image
-								src="/group_image/9.png"
+								src="/group_image/9.jpg"
 								alt="Stockphoto"
 								width={250}
 								height={0}
@@ -210,10 +209,10 @@ export default function discipleship() {
 							initial={"offscreen"}
 							whileInView={"onscreen"}
 							variants={animate_down_up}
-							viewport={{ once: false, amount: 0.1 }}
+							viewport={{ once: false, margin: "100px", amount: 0.1 }}
 						>
 							<Image
-								src="/group_image/10.png"
+								src="/group_image/10.jpg"
 								alt="Stockphoto"
 								width={250}
 								height={0}
@@ -224,10 +223,10 @@ export default function discipleship() {
 							initial={"offscreen"}
 							whileInView={"onscreen"}
 							variants={animate_down_up}
-							viewport={{ once: false, amount: 0.1 }}
+							viewport={{ once: false, margin: "100px", amount: 0.1 }}
 						>
 							<Image
-								src="/group_image/11.png"
+								src="/group_image/11.jpg"
 								alt="Stockphoto"
 								width={250}
 								height={0}
@@ -238,10 +237,10 @@ export default function discipleship() {
 							initial={"offscreen"}
 							whileInView={"onscreen"}
 							variants={animate_down_up}
-							viewport={{ once: false, amount: 0.1 }}
+							viewport={{ once: false, margin: "100px", amount: 0.1 }}
 						>
 							<Image
-								src="/group_image/12.png"
+								src="/group_image/12.jpg"
 								alt="Stockphoto"
 								width={250}
 								height={0}
@@ -252,10 +251,10 @@ export default function discipleship() {
 							initial={"offscreen"}
 							whileInView={"onscreen"}
 							variants={animate_down_up}
-							viewport={{ once: false, amount: 0.1 }}
+							viewport={{ once: false, margin: "100px", amount: 0.1 }}
 						>
 							<Image
-								src="/group_image/13.png"
+								src="/group_image/13.jpg"
 								alt="Stockphoto"
 								width={250}
 								height={0}
@@ -276,14 +275,12 @@ export default function discipleship() {
 				<div className="text-lg md:text-xl">
 					<p className="font-semibold text-sm md:text-base">What we believe?</p>
 					<p className="mt-5">
-						HOME is a small groups community by SPoT, Lorem ipsum dolor sit
-						amet, consectetur
+						At HOME, we strive to embody the teachings of Jesus Christ by nurturing
+						and caring for His flock with love and compassion. We believe in the
+						transformative power of faith, humility, and leading by example, as
+						outlined in the Scriptures.
 					</p>
-					<p>
-						adipiscing elit. Duis auctor feugiat porttitor. Ut tincidunt, ligula
-						a convallis vehicula, enim ligula
-					</p>
-					<p>vestibulum metus, sed varius dolor libero mollis lacus.</p>
+ 
 				</div>
 			</motion.section>
 
@@ -293,19 +290,23 @@ export default function discipleship() {
 				variants={animate}
 				viewport={{ once: false, amount: 0.3 }}
 				id="section5"
-				className="max-w-xs md:max-w-5xl mx-auto flex flex-col md:flex-row gap-4 md:justify-between py-3 md:py-0 -z-20   md:px-8"
+				className="max-w-xs md:max-w-5xl mx-auto grid md:grid-cols-2 auto-rows-min gap-4 md:justify-between py-3 md:py-0 -z-20   md:px-8"
 			>
 				<Card
-					heading="Heading"
-					text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel convallis lacus. Nam at ultrices nulla. Nam sed hendrerit magna, vel finibus nulla."
+					heading="Holiness"
+					text="In HOME, we are called to live in holiness as the foundation of our lives as children of God, embracing a life dedicated to righteousness and purity."
 				/>
 				<Card
-					heading="Heading"
-					text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel convallis lacus. Nam at ultrices nulla. Nam sed hendrerit magna, vel finibus nulla."
+					heading="Obedience"
+					text="In HOME, we learn to live in obedience to the Word of God, aligning our actions and choices with His divine guidance and teachings."
 				/>
 				<Card
-					heading="Heading"
-					text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel convallis lacus. Nam at ultrices nulla. Nam sed hendrerit magna, vel finibus nulla."
+					heading="Ministry"
+					text="HOME should thrive in a spirit of service, actively engaging in various forms of ministry to meet the needs of others and spread God's love within and beyond our community."
+				/>
+				<Card
+					heading="Evangelism"
+					text="HOME serves as a vessel for us to proclaim the good news, encouraging and equipping one another to share the Gospel with the world, inviting others to experience the transformative power of Christ."
 				/>
 			</motion.section>
 
@@ -327,9 +328,9 @@ export default function discipleship() {
 						</div>
 					</div>
 				</div>
-				<div className="flex flex-col md:flex-row items-start md:justify-center gap-3 mt-12 md:mt-10">
-					<Button href="#" text="Counseling" />
-					<Button href="#" text="Contact Us" />
+				<div className="flex flex-wrap items-start md:justify-center gap-3 mt-12 md:mt-10">
+					<Button href="https://wa.me/+6281349677136" text="Counseling" />
+					<Button href="https://wa.me/+6281387243736" text="Contact Us" />
 				</div>
 			</motion.section>
 			<section
