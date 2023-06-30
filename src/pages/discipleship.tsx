@@ -59,11 +59,11 @@ export default function discipleship() {
 					<p className="font-semibold text-sm  md:text-base">What is HOME?</p>
 					<p className="mt-5">
 						HOME is where Sahabat Jiwa conducts anointing and discipleship,
-						teaching individuals to follow all of Christ's commandments.
-						It is a space dedicated to nurturing and empowering souls, guiding
-						them on their spiritual journey. Within the HOME discipleship,
-						Sahabat Jiwa creates a community where individuals find support,
-						understanding, and the opportunity to grow in their faith.
+						teaching individuals to follow all of Christ's commandments. It is a
+						space dedicated to nurturing and empowering souls, guiding them on
+						their spiritual journey. Within the HOME discipleship, Sahabat Jiwa
+						creates a community where individuals find support, understanding,
+						and the opportunity to grow in their faith.
 					</p>
 				</div>
 			</motion.section>
@@ -275,12 +275,11 @@ export default function discipleship() {
 				<div className="text-lg md:text-xl">
 					<p className="font-semibold text-sm md:text-base">What we believe?</p>
 					<p className="mt-5">
-						At HOME, we strive to embody the teachings of Jesus Christ by nurturing
-						and caring for His flock with love and compassion. We believe in the
-						transformative power of faith, humility, and leading by example, as
-						outlined in the Scriptures.
+						At HOME, we strive to embody the teachings of Jesus Christ by
+						nurturing and caring for His flock with love and compassion. We
+						believe in the transformative power of faith, humility, and leading
+						by example, as outlined in the Scriptures.
 					</p>
- 
 				</div>
 			</motion.section>
 
