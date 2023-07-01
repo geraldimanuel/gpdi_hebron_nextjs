@@ -360,7 +360,7 @@ export default function Home() {
 							subtitle="Shine the Light of Faith with SPoT's Media Team - Captivating Visuals, Divine Stories!"
 							background="/Media_Banner.webp"
 							logo="/Logo_Spot_Media_Team.webp"
-							bgColor="yellow"
+							bgColor="orange"
 						>
 							<Button
 								href="https://wa.me/+6281288690614"
@@ -379,7 +379,7 @@ export default function Home() {
 							subtitle="Unleash Your Imagination with SPoT's Creative Team - Where Innovation Meets Inspiration!"
 							background="/Creative_Banner.webp"
 							logo="/Logo_Spot_Creative_Team.webp"
-							bgColor="orange"
+							bgColor="yellow"
 						>
 							<Button
 								href="https://wa.me/+6281288690614"

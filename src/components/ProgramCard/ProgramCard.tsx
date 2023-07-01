@@ -28,9 +28,9 @@ export function ProgramCard({
 							bgColor == "red"
 								? "before:bg-red-600"
 								: bgColor == "yellow"
-								? "before:bg-yellow-600"
+								? "before:bg-yellow-500"
 								: bgColor == "orange"
-								? "before:bg-orange-600"
+								? "before:bg-orange-400"
 								: "before:bg-blue-600"
 						}
         `}
