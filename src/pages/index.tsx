@@ -196,7 +196,7 @@ export default function Home() {
 				</div>
 			</motion.section>
 
-			<motion.section
+			{/* <motion.section
 				initial={"offscreen"}
 				whileInView={"onscreen"}
 				variants={animate}
@@ -219,7 +219,7 @@ export default function Home() {
 					name="Redo Yosef"
 					text="Leadership rooted in prayer and reliance on God's wisdom can move mountains and transform lives."
 				/>
-			</motion.section>
+			</motion.section> */}
 
 			<motion.section
 				initial={"offscreen"}
@@ -324,7 +324,7 @@ export default function Home() {
 							logo="/Logo_HOME.webp"
 							bgColor="blue"
 						>
-							<Button text="Counseling" />
+							<Button text="Counseling" href="https://wa.me/+6281349677136" />
 							<Button text="Learn More" href="/discipleship" />
 						</ProgramCard>
 					</motion.div>
@@ -338,11 +338,53 @@ export default function Home() {
 					>
 						<ProgramCard
 							subtitle="Service Team by SPoT who serves in Praise & Worship ministry, and more"
-							background="/Banner_SPOT_new.webp"
+							background="/Banner_SPOT.webp"
 							logo="/Logo_Spot_Service_Team.webp"
 							bgColor="red"
 						>
-							<Button text="Join our team" />
+							<Button
+								href="https://wa.me/+6281288690614"
+								text="Join our Service team"
+							/>
+						</ProgramCard>
+					</motion.div>
+
+					<motion.div
+						initial={"offscreen"}
+						whileInView={"onscreen"}
+						variants={animate}
+						viewport={{ once: false, amount: 0.1 }}
+						className="relative rounded-3xl overflow-hidden"
+					>
+						<ProgramCard
+							subtitle="Shine the Light of Faith with SPoT's Media Team - Captivating Visuals, Divine Stories!"
+							background="/Media_Banner.webp"
+							logo="/Logo_Spot_Media_Team.webp"
+							bgColor="yellow"
+						>
+							<Button
+								href="https://wa.me/+6281288690614"
+								text="Join our Media team"
+							/>
+						</ProgramCard>
+					</motion.div>
+					<motion.div
+						initial={"offscreen"}
+						whileInView={"onscreen"}
+						variants={animate}
+						viewport={{ once: false, amount: 0.1 }}
+						className="relative rounded-3xl overflow-hidden"
+					>
+						<ProgramCard
+							subtitle="Unleash Your Imagination with SPoT's Creative Team - Where Innovation Meets Inspiration!"
+							background="/Creative_Banner.webp"
+							logo="/Logo_Spot_Creative_Team.webp"
+							bgColor="orange"
+						>
+							<Button
+								href="https://wa.me/+6281288690614"
+								text="Join our Creative team"
+							/>
 						</ProgramCard>
 					</motion.div>
 				</div>

@@ -24,7 +24,15 @@ export function ProgramCard({
             bg-cover bg-no-repeat bg-center
             before:absolute before:inset-0 before:z-[1]
             before:mix-blend-multiply md:text-xl
-            ${bgColor == "red" ? "before:bg-red-600" : "before:bg-blue-600"}
+            ${
+							bgColor == "red"
+								? "before:bg-red-600"
+								: bgColor == "yellow"
+								? "before:bg-yellow-600"
+								: bgColor == "orange"
+								? "before:bg-orange-600"
+								: "before:bg-blue-600"
+						}
         `}
 			style={{ backgroundImage: `url(${background})` }}
 		>
