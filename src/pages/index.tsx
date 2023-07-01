@@ -287,7 +287,7 @@ export default function Home() {
 							</p>
 						</div>
 						<div className="flex w-fit md:w-full flex-wrap gap-2 md:gap-4 mt-3 pb-14">
-							<Button href="https://wa.me/+6281387243736" text="Contact Us" />
+							<Button href="https://wa.me/+6281288690614" text="Contact Us" />
 							<Button
 								href="https://goo.gl/maps/x32zhLbgF53JSbj29"
 								text="Directions"

@@ -329,7 +329,7 @@ export default function discipleship() {
 				</div>
 				<div className="flex flex-wrap items-start md:justify-center gap-3 mt-12 md:mt-10">
 					<Button href="https://wa.me/+6281349677136" text="Counseling" />
-					<Button href="https://wa.me/+6281387243736" text="Contact Us" />
+					<Button href="https://wa.me/+6281288690614" text="Contact Us" />
 				</div>
 			</motion.section>
 			<section
